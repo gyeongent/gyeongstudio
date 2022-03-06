@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <title>
             GYEONG Studio
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="src/css/main.css">
+        <script type="text/javascript" src="src/js/main.js"></script>
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="/src/js/main.js"></script>
     </head>
     <body>
         <header>
@@ -49,7 +49,7 @@
         </header>
         <div id="MainSection"><p data-langNum="2">This is GYEONG Studio</p></div>
         <div id="ContentsSection">
-            <p data-langNum="3">The website is being prepared<p data-langNum="4">please wait :)</p></p>
+            <p data-langNum="3">The website is being prepared<br>please wait :)</p>
         </div>
         <footer>
             <p>(C) 2022. by GYEONG Studio.</p>
@@ -67,4 +67,44 @@
             </ul>
         </footer>
     </body>
+    <!-- Lang Scripts -->
+    <script>
+        // 언어팩 선언.
+        $.lang = {};
+
+        $.lang.en = {
+        0: 'Portfolio',
+        1: 'Download',
+        2: 'This is GYEONG Studio',
+        3: 'The website is being prepared<br>please wait :)',
+        4: 'please wait :)'
+        };
+
+        $.lang.ko = {
+        0: '포트폴리오',
+        1: '다운로드',
+        2: 'GYEONG Studio에 오신 것을 환영합니다.',
+        3: '웹사이트 준비중입니다.<br>잠시만 기다려주세요 :)',
+        4: '잠시만 기다려주세요 :)'
+        };
+
+        /**
+        * setLanguage 
+        * use $.lang[currentLanguage][languageNumber]
+        */
+        function setLanguage(currentLanguage) {
+        console.log('setLanguage', arguments);
+        
+        $('[data-langNum]').each(function() {
+            var $this = $(this); 
+            $this.html($.lang[currentLanguage][$this.data('langnum')]); 
+        });    
+        }  
+        
+        // 언어 변경
+        $('button').click(function() {
+        var lang = $(this).data('lang');
+        setLanguage(lang); 
+        });
+    </script>
 </html>
