@@ -146,7 +146,7 @@ footer > p {
     cursor: pointer;
 }
 
-.portfolio_btn_active {
+.portfolio_btn:active, .portfolio_btn:visited {
     background-color: black;
     color: white;
     cursor: pointer;

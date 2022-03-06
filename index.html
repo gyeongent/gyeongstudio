@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="src/css/main.css">
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="/src/js/main.js"></script>
     </head>
     <body>
         <header>
@@ -16,12 +18,12 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="portfolio.html" target="_blank">
+                        <a href="portfolio.html" target="_blank" data-langNum="0">
                             Portfolio
                         </a>
                     </li>
                     <li>
-                        <a onclick="alert('Soon');" style="cursor:pointer">
+                        <a onclick="alert('Soon');" style="cursor:pointer" data-langNum="1">
                             Download
                         </a>
                     </li>
@@ -45,12 +47,24 @@
                 </ul>
             </div>
         </header>
-        <div id="MainSection"><p>This is GYEONG Studio</p></div>
+        <div id="MainSection"><p data-langNum="2">This is GYEONG Studio</p></div>
         <div id="ContentsSection">
-            <p>The website is being prepared</br>please wait :)</p>
+            <p data-langNum="3">The website is being prepared<p data-langNum="4">please wait :)</p></p>
         </div>
         <footer>
             <p>(C) 2022. by GYEONG Studio.</p>
+            <ul>
+                <li>
+                    <button data-lang="en">
+                        English
+                    </button>
+                </li>
+                <li>
+                    <button data-lang="ko">
+                        한국어
+                    </button>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>

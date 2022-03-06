@@ -9,6 +9,14 @@
         <link rel="stylesheet" type="text/css" href="src/css/main.css">
         <script type="text/javascript" src="/src/js/main.js"></script>
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
+        <style>
+            a.clicked { color:#000; }
+            </style>
+            <script>
+            $("a").click(function() {
+                toggleClass(".clicked");
+            });
+            </script>
     </head>
     <body>
         <header>
@@ -53,14 +61,14 @@
                 <div>
                     <ul>
                         <li>
-                            <a class="portfolio_btn">
+                            <div class="portfolio_btn">
                                 Graphics
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a class="portfolio_btn">
+                            <div class="portfolio_btn">
                                 Games
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -80,4 +88,19 @@
             <p>(C) 2022. by GYEONG Studio.</p>
         </footer>
     </body>
+    <script type="text/javascript">
+        // var div2 = document.querySelectorAll('.div2');
+        var div2 = document.getElementsByClassName('portfolio_btn');
+    
+        for (var i = 0; i < div2.length; i++) {
+          div2[i].addEventListener('click', function(){
+            for (var j = 0; j < div2.length; j++) {
+              div2[j].style.color = "black";
+              div2[j].style.background = "white";
+            }
+            this.style.color = "white";
+            this.style.background = "black";
+          })
+        }
+    </script>
 </html>

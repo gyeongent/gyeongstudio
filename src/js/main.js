@@ -1,25 +1,37 @@
-var portfolio_btn = document.getElementsByClassName("portfolio_btn");
+// 언어팩 선언.
+$.lang = {};
+ 
+$.lang.ko = {
+    0: '포트폴리오',
+    1: '다운로드',
+    2: 'GYEONG Studio에 오신 것을 환영합니다.',
+    3: '웹사이트 준비중입니다.',
+    4: '잠시만 기다려주세요 :)'
+};
 
-      function handleClick(event) {
-        console.log(event.target);
-
-        console.log(event.target.classList);
-
-        if (event.target.classList[1] === "portfolio_btn_active") {
-          event.target.classList.remove("portfolio_btn_active");
-        } else {
-          for (var i = 0; i < portfolio_btn.length; i++) {
-            portfolio_btn[i].classList.remove("portfolio_btn_active");
-          }
-
-          event.target.classList.add("portfolio_btn_active");
-        }
-      }
-
-      function init() {
-        for (var i = 0; i < portfolio_btn.length; i++) {
-          portfolio_btn[i].addEventListener("click", handleClick);
-        }
-      }
-
-init();
+$.lang.en = {
+    0: 'Portfolio',
+    1: 'Download',
+    2: 'This is GYEONG Studio',
+    3: 'The website is being prepared',
+    4: 'please wait :)'
+};
+ 
+/**
+* setLanguage 
+* use $.lang[currentLanguage][languageNumber]
+*/
+function setLanguage(currentLanguage) {
+  console.log('setLanguage', arguments);
+  
+  $('[data-langNum]').each(function() {
+    var $this = $(this); 
+    $this.html($.lang[currentLanguage][$this.data('langnum')]); 
+  });    
+}  
+ 
+// 언어 변경
+$('button').click(function() {
+  var lang = $(this).data('lang');
+  setLanguage(lang); 
+});
