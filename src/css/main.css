@@ -1,3 +1,5 @@
+/* MAIN STYLE */
+
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 html, body {
@@ -72,7 +74,7 @@ header > #HeaderArticle_2 > ul > li {
     padding-right: 15px;
 }
 
-#MainSection_img {
+#MainSection {
     width: 100%;
     height: 35vw;
     filter:opacity(70%);
@@ -84,14 +86,14 @@ header > #HeaderArticle_2 > ul > li {
     text-align: center;
 }
 
-#MainSection_img > p {
+#MainSection > p {
     width: 100%;
     color: white;
     font-size: 40px;
     text-align: center;
     letter-spacing: -1px;
     font-weight: 700;
-    padding-top: 300px;
+    padding-top: 17%;
 }
 
 #ContentsSection {
@@ -101,8 +103,8 @@ header > #HeaderArticle_2 > ul > li {
 
 #ContentsSection > p {
     text-align: center;
-    padding-top: 200px;
-    font-size: 50px;
+    padding-top: 12%;
+    font-size: 2vw;
     letter-spacing: -1px;
 }
 
@@ -119,4 +121,33 @@ footer {
 
 footer > p {
     padding-top: 35px;
+}
+
+/* PORTFOLIO STYLE */
+
+#SelectArticle > div > ul {
+    list-style: none;
+    display: flex;
+}
+
+#SelectArticle > div > ul > li {
+    padding-right: 12px;
+}
+
+.portfolio_btn {
+    padding: 8px 12px;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+
+.portfolio_btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.portfolio_btn_active {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
