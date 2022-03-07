@@ -176,7 +176,7 @@ footer > p {
     margin-top: -20px;
     cursor: pointer;
     text-align: left;
-    width:max-content;
+    width: max-content;
 }
 
 .Lang_sel:hover .Lang_menu {
