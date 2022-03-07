@@ -8,6 +8,7 @@ html, body {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     overflow-x: hidden;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 hr {
@@ -199,10 +200,13 @@ footer > p {
 
 #portfolio_btn {
     padding: 8px 12px;
-    border: 1px solid #000;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid lightgrey;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
+    box-shadow: 0px 0px 10px hsl(0deg 0% 0% / 0.15);
+    font-weight: 700;
 }
 
 #portfolio_btn:hover {
@@ -220,20 +224,24 @@ footer > p {
 }
 
 #portfolio_contents_1{
-    border: 1px solid #000;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid lightgrey;
     border-radius: 10px;
     padding: 12px 12px;
     width: 40%;
-    display: none;
+    display: block;
+    box-shadow: 0px 0px 30px hsl(0deg 0% 0% / 0.15);
 }
 
 #portfolio_contents_2 {
-    border: 1px solid #000;
+    border: 1px solid lightgrey;
+    background-color: rgb(243, 243, 243);
     border-radius: 10px;
     padding: 12px 12px;
     margin-left: -12px;
     width: 100%;
     display: none;
+    box-shadow: 0px 0px 30px hsl(0deg 0% 0% / 0.15);
 }
 
 .portfolio_contents_title {
