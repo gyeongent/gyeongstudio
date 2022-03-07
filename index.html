@@ -18,12 +18,12 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="portfolio.html" target="_blank" data-langNum="0">
+                        <a href="portfolio.html" data-langNum="0">
                             Portfolio
                         </a>
                     </li>
                     <li>
-                        <a onclick="alert('Soon');" style="cursor:pointer" data-langNum="1">
+                        <a href="javascript:soon();" style="cursor:pointer" data-langNum="1">
                             Download
                         </a>
                     </li>
@@ -53,21 +53,26 @@
         </div>
         <footer>
             <p>(C) 2022. by GYEONG Studio.</p>
-            <ul>
-                <li>
-                    <button data-lang="en">
-                        English
-                    </button>
-                </li>
-                <li>
-                    <button data-lang="ko">
-                        한국어
-                    </button>
-                </li>
-            </ul>
+            <div class="Lang_sel">
+                Language &nbsp;<i class="fa fa-caret-up"></i>
+                <div class="Lang_menu">
+                    <ul>
+                        <li>
+                            <div class="Lang_btn" data-lang="en">
+                                English
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="ko">
+                                한국어
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </body>
-    <!-- Lang Scripts -->
+    <!-- Language Script -->
     <script>
         // 언어팩 선언.
         $.lang = {};
@@ -102,7 +107,7 @@
         }  
         
         // 언어 변경
-        $('button').click(function() {
+        $('.Lang_btn').click(function() {
         var lang = $(this).data('lang');
         setLanguage(lang); 
         });

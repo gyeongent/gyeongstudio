@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="src/css/main.css">
         <script type="text/javascript" src="/src/js/main.js"></script>
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
         <style>
             a.clicked { color:#000; }
             </style>
@@ -26,12 +27,12 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="https://portfolio.gyeong.net/" target="_blank">
+                        <a href="https://portfolio.gyeong.net/" target="_blank" data-langNum="0">
                             Portfolio
                         </a>
                     </li>
                     <li>
-                        <a onclick="alert('Soon');" style="cursor:pointer">
+                        <a onclick="alert('Soon');" style="cursor:pointer" data-langNum="1">
                             Download
                         </a>
                     </li>
@@ -55,19 +56,19 @@
                 </ul>
             </div>
         </header>
-        <div id="MainSection"><p>This is GYEONG Studio</p></div>
+        <div id="MainSection"><p data-langNum="2">This is GYEONG Studio</p></div>
         <div id="ContentsSection">
             <div id="SelectArticle">
                 <div>
                     <ul>
                         <li>
-                            <div class="portfolio_btn">
-                                Graphics
+                            <div class="portfolio_btn" id="portfolio_btn_1" onclick="javascript:newsViewer(1)" data-langNum="3">
+                                <p>Graphics</p>
                             </div>
                         </li>
                         <li>
-                            <div class="portfolio_btn">
-                                Games
+                            <div class="portfolio_btn" id="portfolio_btn_2" onclick="javascript:newsViewer(2)" data-langNum="4">
+                                <p>Games</p>
                             </div>
                         </li>
                     </ul>
@@ -75,10 +76,26 @@
                 <div>
                     <ul>
                         <li>
-                            It's graphics contents
+                            <div id="portfolio_contents_1">
+                                <p class="portfolio_contents_title" data-langNum="5">Add empathy to the design.</p>
+                                <p class="portfolio_contents_contents" data-langNum="6">Since childhood, I have loved to be creative.  Growing up like that, I was able to create the works of my imagination, and in all of them, I tried to contain a message that anyone could easily “sympathize” with.</p>
+                                <p class="portfolio_contents_link">
+                                    <a href="https://portfolio.gyeong.net/" target="_blank" data-langNum="7">
+                                        Go to portfolio site &#xE001;
+                                    </a>
+                                </p>
+                            </div>
                         </li>
                         <li>
-                            It's games contents
+                            <div id="portfolio_contents_2">
+                                <p class="portfolio_contents_title" data-langNum="8">Challenged.</p>
+                                <p class="portfolio_contents_contents" data-langNum="9">-</p>
+                                <p class="portfolio_contents_link">
+                                    <a href="javascript:soon();" data-langNum="10">
+                                        Games download &#xE001;
+                                    </a>
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -86,8 +103,26 @@
         </div>
         <footer>
             <p>(C) 2022. by GYEONG Studio.</p>
+            <div class="Lang_sel">
+                Language &nbsp;<i class="fa fa-caret-up"></i>
+                <div class="Lang_menu">
+                    <ul>
+                        <li>
+                            <div class="Lang_btn" data-lang="en">
+                                English
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="ko">
+                                한국어
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </body>
+    <!-- Portflio Button Event -->
     <script type="text/javascript">
         // var div2 = document.querySelectorAll('.div2');
         var div2 = document.getElementsByClassName('portfolio_btn');
@@ -102,5 +137,57 @@
             this.style.background = "black";
           })
         }
+    </script>
+    <!-- Language Script -->
+    <script>
+        // 언어팩 선언.
+        $.lang = {};
+
+        $.lang.en = {
+        0: 'Portfolio',
+        1: 'Download',
+        2: 'This is GYEONG Studio',
+        3: 'Graphics',
+        4: 'Games',
+        5: 'Add empathy to the design.',
+        6: 'Since childhood, I have loved to be creative.  Growing up like that, I was able to create the works of my imagination, and in all of them, I tried to contain a message that anyone could easily “sympathize” with.',
+        7: 'Go to portfolio site &#xE001;',
+        8: 'Challenged.',
+        9: '-',
+        10: 'Games download &#xE001;',
+        };
+
+        $.lang.ko = {
+        0: '포트폴리오',
+        1: '다운로드',
+        2: 'GYEONG Studio에 오신 것을 환영합니다.',
+        3: '그래픽',
+        4: '게임',
+        5: '디자인에 공감을 더하다',
+        6: '유년기 시절부터 창의적인 만들기를 좋아했었습니다. 그렇게 자라 내가 상상하던 작품을 만들게 되었고 그 모든 작품 안에는  누구나 쉽게 "공감" 할수 있는 메세지를 담도록 노력했습니다.',
+        7: '포트폴리오 사이트로 이동하기 &#xE001;',
+        8: '도전기',
+        9: '-',
+        10: '게임 다운로드 &#xE001;',
+        };
+
+        /**
+        * setLanguage 
+        * use $.lang[currentLanguage][languageNumber]
+        */
+        function setLanguage(currentLanguage) {
+        console.log('setLanguage', arguments);
+        
+        $('[data-langNum]').each(function() {
+            var $this = $(this); 
+            $this.html($.lang[currentLanguage][$this.data('langnum')]); 
+        });    
+        }  
+        
+        // 언어 변경
+        $('.Lang_btn').click(function() {
+        var lang = $(this).data('lang');
+        setLanguage(lang); 
+        });
     </script>
 </html>
