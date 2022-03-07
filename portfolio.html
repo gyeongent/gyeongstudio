@@ -60,6 +60,11 @@
                     <li>
                         <i class="fab fa-github"></i>
                     </li>
+                    <li>
+                        <a href="mailto:support@gyeong.net">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -69,12 +74,12 @@
                 <div>
                     <ul>
                         <li>
-                            <div class="portfolio_btn" id="portfolio_btn_1" onclick="javascript:newsViewer(1)" data-langNum="3">
+                            <div id="portfolio_btn" onclick="javascript:newsViewer(1)" data-langNum="3">
                                 <p>Graphics</p>
                             </div>
                         </li>
                         <li>
-                            <div class="portfolio_btn" id="portfolio_btn_2" onclick="javascript:newsViewer(2)" data-langNum="4">
+                            <div id="portfolio_btn" onclick="javascript:newsViewer(2)" data-langNum="4">
                                 <p>Games</p>
                             </div>
                         </li>
@@ -111,20 +116,21 @@
         <footer>
             <p>(C) 2022. by GYEONG Studio.</p>
             <div class="Lang_sel">
-                Language &nbsp;<i class="fa fa-caret-up"></i>
+                <p data-langNum="11">Language &nbsp;<i class="fa fa-caret-up"></i></p>
                 <div class="Lang_menu">
                     <ul>
                         <li>
                             <div class="Lang_btn" data-lang="en">
-                                English
+                                &#127482;&#127475; English
                             </div>
                         </li>
                         <li>
                             <div class="Lang_btn" data-lang="ko">
-                                한국어
+                                &#127472;&#127479; 한국어
                             </div>
                         </li>
                     </ul>
+                    <hr>
                 </div>
             </div>
         </footer>
@@ -132,7 +138,7 @@
     <!-- Portflio Button Event -->
     <script type="text/javascript">
         // var div2 = document.querySelectorAll('.div2');
-        var div2 = document.getElementsByClassName('portfolio_btn');
+        var div2 = document.querySelectorAll('#portfolio_btn');
     
         for (var i = 0; i < div2.length; i++) {
           div2[i].addEventListener('click', function(){
@@ -142,6 +148,8 @@
             }
             this.style.color = "white";
             this.style.background = "black";
+
+            return color;
           })
         }
     </script>
@@ -162,6 +170,7 @@
         8: 'Challenged.',
         9: '-',
         10: 'Games download &#xE001;',
+        11: 'Language &nbsp;<i class="fa fa-caret-up"></i>',
         };
 
         $.lang.ko = {
@@ -176,6 +185,7 @@
         8: '도전기',
         9: '-',
         10: '게임 다운로드 &#xE001;',
+        11: '언어 &nbsp;<i class="fa fa-caret-up"></i>',
         };
 
         /**
