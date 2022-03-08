@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="javascript:getLang();">
         <title>
             GYEONG Studio
         </title>
@@ -80,6 +80,11 @@
                                 &#127472;&#127479; 한국어
                             </div>
                         </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="ja">
+                                &#127471;&#127477; 日本語
+                            </div>
+                        </li>
                     </ul>
                     <hr>
                 </div>
@@ -107,6 +112,14 @@
         4: '언어 &nbsp;<i class="fa fa-caret-up"></i>'
         };
 
+        $.lang.ja = {
+        0: 'ポートフォリオ',
+        1: 'ダウンロード',
+        2: 'GYEONG Studioへようこそ。',
+        3: 'ウェブサイトを準備中です。<br>少々お待ちくださいませ :)',
+        4: '言語 &nbsp;<i class="fa fa-caret-up"></i>',
+        }
+
         /**
         * setLanguage 
         * use $.lang[currentLanguage][languageNumber]
@@ -125,5 +138,8 @@
         var lang = $(this).data('lang');
         setLanguage(lang); 
         });
+
+        if (getLang() == "ko")
+            setLanguage(getLang());
     </script>
 </html>

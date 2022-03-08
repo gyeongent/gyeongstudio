@@ -2,28 +2,139 @@
 <html>
     <head>
         <title>
-            GYEONG Studio
+            Download | GYEONG Studio
         </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="GyeongMin Lee(GYEONG)" />
+        <meta http-equiv="Reply-To" content="info@gyeong.net" />
+        <meta http-equiv="Email" content="info@gyeong.net" />
+        <meta http-equiv="Publisher" content="GYEONG Studio" />
+        <meta name="Keywords" content="Game, 게임, Graphics, 그래픽, 3D, html, css ,js" />
+        <meta name="description" content="GYEONG Studio Website, The work of Graphics and Game development." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+        <script type="text/javascript" src="src/js/main.js"></script>
+        <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
     </head>
     <body>
         <header>
-            <img src="src/images/logo.png">
-            <ul>
-                <li>
-                    Downloads
-                </li>
-                <li>
-                    <a href="https://portfolio.gyeong.net/" target="_blank">
-                        Portfolio
-                    </a>
-                </li>
-            </ul>
+            <div id="HeaderArticle_1">
+                <a href="index.html">
+                    <img src="src/images/logo.png" width="100%">
+                </a>
+                <ul>
+                    <li>
+                        <a href="portfolio.html" data-langNum="0">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-langNum="1">
+                            Download
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="HeaderArticle_2">
+                <ul>
+                    <li>
+                        <a href="https://facebook.com/gyeongofficialpage">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/gyeong_studio">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                    </li>
+                    <li>
+                        <a href="mailto:support@gyeong.net">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </header>
-        <h2>This is GYEONG Studio</h2></br>
-
-        <p>The website is being prepared.</p>
+        <div id="MainSection"><p data-langNum="2">This is GYEONG Studio</p></div>
+        <div id="ContentsSection">
+            <p data-langNum="3">The website is being prepared<br>please wait :)</p>
+        </div>
         <footer>
-            (C) 2022. by GYEONG Studio
+            <p>(C) 2022. by GYEONG Studio.</p>
+            <div class="Lang_sel">
+                <p data-langNum="4">Language &nbsp;<i class="fa fa-caret-up"></i></p>
+                <div class="Lang_menu">
+                    <ul>
+                        <li>
+                            <div class="Lang_btn" data-lang="en">
+                                &#127482;&#127475; English
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="ko">
+                                &#127472;&#127479; 한국어
+                            </div>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
         </footer>
     </body>
+    <!-- Language Script -->
+    <script>
+        // 언어팩 선언.
+        $.lang = {};
+
+        $.lang.en = {
+        0: 'Portfolio',
+        1: 'Download',
+        2: 'This is GYEONG Studio',
+        3: 'The website is being prepared<br>please wait :)',
+        4: 'Language &nbsp;<i class="fa fa-caret-up"></i>'
+        };
+
+        $.lang.ko = {
+        0: '포트폴리오',
+        1: '다운로드',
+        2: 'GYEONG Studio에 오신 것을 환영합니다.',
+        3: '웹사이트 준비중입니다.<br>잠시만 기다려주세요 :)',
+        4: '언어 &nbsp;<i class="fa fa-caret-up"></i>'
+        };
+
+        $.lang.ja = {
+        0: '',
+        1: '',
+        2: '',
+        3: '',
+        4: '',
+        }
+
+        /**
+        * setLanguage 
+        * use $.lang[currentLanguage][languageNumber]
+        */
+        function setLanguage(currentLanguage) {
+        console.log('setLanguage', arguments);
+        
+        $('[data-langNum]').each(function() {
+            var $this = $(this); 
+            $this.html($.lang[currentLanguage][$this.data('langnum')]); 
+        });    
+        }  
+        
+        // 언어 변경
+        $('.Lang_btn').click(function() {
+        var lang = $(this).data('lang');
+        setLanguage(lang); 
+        });
+
+        if (getLang() == "ko")
+            setLanguage(getLang());
+    </script>
 </html>

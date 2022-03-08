@@ -24,7 +24,10 @@
             $("a").click(function() {
                 toggleClass(".clicked");
             });
-            </script>
+        </script>
+        <script>
+            session.getAttribute("Lang_index")
+        </script>
     </head>
     <body>
         <header>
@@ -104,7 +107,7 @@
                                 <p class="portfolio_contents_contents" data-langNum="9">-</p>
                                 <p class="portfolio_contents_link">
                                     <a href="javascript:soon();" data-langNum="10">
-                                        Games download &#xE001;
+                                        Game download &#xE001;
                                     </a>
                                 </p>
                             </div>
@@ -129,6 +132,11 @@
                                 &#127472;&#127479; 한국어
                             </div>
                         </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="ja">
+                                &#127471;&#127477; 日本語
+                            </div>
+                        </li>
                     </ul>
                     <hr>
                 </div>
@@ -147,7 +155,7 @@
               div2[j].style.background = "white";
             }
             this.style.color = "black";
-            this.style.background = "lightgrey";
+            this.style.background = "rgb(250, 250, 250)";
 
             return color;
           })
@@ -169,7 +177,7 @@
         7: 'Go to portfolio site &#xE001;',
         8: 'Challenged.',
         9: '-',
-        10: 'Games download &#xE001;',
+        10: 'Game download &#xE001;',
         11: 'Language &nbsp;<i class="fa fa-caret-up"></i>',
         };
 
@@ -187,6 +195,21 @@
         10: '게임 다운로드 &#xE001;',
         11: '언어 &nbsp;<i class="fa fa-caret-up"></i>',
         };
+
+        $.lang.ja = {
+        0: 'ポートフォリオ',
+        1: 'ダウンロード',
+        2: 'GYEONG Studioへようこそ。',
+        3: 'グラフィック',
+        4: 'ゲーム',
+        5: 'デザインに共感を添える',
+        6: '幼年期の頃から創意的なものづくりが好きでした。 そう成長して私が想像していた作品を作るようになり、そのすべての作品の中には誰でも簡単に"共感"できるメッセージを入れるように努力しました。',
+        7: 'ポートフォリオサイトに移動する（日本語対応なし） &#xE001;',
+        8: '導電器',
+        9: '-',
+        10: 'ゲーム ダウンロード &#xE001;',
+        11: '言語 &nbsp;<i class="fa fa-caret-up"></i>',
+        }
 
         /**
         * setLanguage 
@@ -206,5 +229,8 @@
         var lang = $(this).data('lang');
         setLanguage(lang); 
         });
+
+        if (getLang() == "ko")
+            setLanguage(getLang());
     </script>
 </html>
