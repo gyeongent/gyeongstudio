@@ -229,10 +229,13 @@ footer > p {
 #PFO_SIDE_BAR {
     width: 100%;
     height: 194px;
-    border: 1px solid #000;
+    border-left: 1px solid lightslategrey;
     padding: 12px 12px;
-    border-radius: 20px;
     float: right;
+}
+
+#PFO_SIDE_BAR > p {
+    margin-left: 25px;
 }
 
 #portfolio_btn {
