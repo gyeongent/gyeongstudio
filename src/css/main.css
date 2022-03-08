@@ -67,7 +67,7 @@ header > #HeaderArticle_1 > a {
     width: 13%;
     margin-top: 15px;
     margin-left: 30px;
-    padding-right: 10px;
+    padding-right: 15px;
     height: max-content;
     border-right: 1px solid lightgrey;
 }
@@ -80,6 +80,8 @@ header > #HeaderArticle_1 > ul {
 
 header > #HeaderArticle_1 > ul > li {
     padding-right: 12px;
+    letter-spacing: -1px;
+    font-weight: 700;
 }
 
 header > #HeaderArticle_2 {
@@ -117,6 +119,7 @@ header > #HeaderArticle_2 > ul > li {
     letter-spacing: -1px;
     font-weight: 700;
     padding-top: 17%;
+    filter: drop-shadow(0 0 0.7rem black);
 }
 
 #ContentsSection {
@@ -293,4 +296,31 @@ footer > p {
     font-weight: 400;
     padding-top: 20px;
     letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+
+    #MainSection {
+        height: 100vh;
+    }
+
+    #MainSection > p {
+        padding-top: 50vh;
+        word-break: normal;
+        font-size: 5vw;
+    }
+
+    #HeaderArticle_1 > a {
+        width: 100%;
+    }
+
+    #ContentsSection {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    #ContentsSection > p {
+        font-size: 5vw;
+        padding-top: 30%
+    }
 }
