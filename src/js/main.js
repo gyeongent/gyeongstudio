@@ -54,17 +54,17 @@ function LangSelClick() {
 // 	}
 // })
 
-let before = 0;
-window.addEventListener('scroll',(ev)=>{
-	if(before < window.scrollY){
-		this.document.getElementsByClassName('header')[0].style.top = "-80px";
-		console.log("scroll down");
-	}
-	else {
-		this.document.getElementsByClassName('header')[0].style.top = "0px";
-		console.log("scroll up");
-	}
-	before = window.scrollY;
-})
+// let before = 0;
+// window.addEventListener('scroll',(ev)=>{
+// 	if(before < window.scrollY){
+// 		this.document.getElementsByClassName('header')[0].style.top = "-80px";
+// 		console.log("scroll down");
+// 	}
+// 	else {
+// 		this.document.getElementsByClassName('header')[0].style.top = "0px";
+// 		console.log("scroll up");
+// 	}
+// 	before = window.scrollY;
+// })
 
 console.log('Detected Language : ' + getLang());
