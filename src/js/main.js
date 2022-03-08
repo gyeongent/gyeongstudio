@@ -35,4 +35,3 @@ function getLang(){
 }
 
 console.log('Detected Language : ' + getLang());
-console.log('Set Language => ' + getLang());
