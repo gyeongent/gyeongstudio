@@ -34,4 +34,13 @@ function getLang(){
 	return strLang;
 }
 
+window.onload = function () {
+	var el = document.getElementsByClassName("Lang_sel");
+	el.onclick = LangSelClick;
+}
+
+function LangSelClick() {
+	document.getElementsByClassName("Lang_menu")[0].classList.toggle('onclick')
+}
+
 console.log('Detected Language : ' + getLang());
