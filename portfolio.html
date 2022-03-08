@@ -27,7 +27,7 @@
         </script>
     </head>
     <body>
-        <header class="header">
+        <header class="header" onscroll="">
             <div id="HeaderArticle_1">
                 <a href="index.html">
                     <img src="src/images/logo.png" width="90%">
@@ -238,14 +238,4 @@
             setLanguage(getLang());
     </script>
     <!-- Hide Header Script -->
-    <script>
-        $(window).scroll(function(evt){
-            var y = $(this).scrollTop();
-            if (y > 120) {
-                $('.header').removeClass('fixed');
-            } else {
-                $('.header').addClass('fixed');
-            }
-        })
-    </script>
 </html>

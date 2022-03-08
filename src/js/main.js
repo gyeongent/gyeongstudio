@@ -43,15 +43,28 @@ function LangSelClick() {
 	document.getElementsByClassName("Lang_menu")[0].classList.toggle('onclick')
 }
 
-window.addEventListener('scroll', function(){
-	var nowScroll = this.document.body.scrollTop;
-	console.log(nowScroll)
+// window.addEventListener('scroll', function(){
+// 	var nowScroll = this.document.body.scrollTop;
+// 	console.log(nowScroll)
 	
-	if(nowScroll > 0){
-		this.document.getElementsByClassName('header')[0].style.top = '-80px';
-	} else if(nowScroll <1){
-		this.document.getElementsByClassName('header')[0].style.top = '0px';
+// 	if(nowScroll > 0){
+// 		this.document.getElementsByClassName('header')[0].style.top = '-80px';
+// 	} else if(nowScroll <1){
+// 		this.document.getElementsByClassName('header')[0].style.top = '0px';
+// 	}
+// })
+
+let before = 0;
+window.addEventListener('scroll',(ev)=>{
+	if(before < window.scrollY){
+		this.document.getElementsByClassName('header')[0].style.top = "-80px";
+		console.log("scroll down");
 	}
+	else {
+		this.document.getElementsByClassName('header')[0].style.top = "0px";
+		console.log("scroll up");
+	}
+	before = window.scrollY;
 })
 
 console.log('Detected Language : ' + getLang());
