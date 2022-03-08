@@ -43,4 +43,15 @@ function LangSelClick() {
 	document.getElementsByClassName("Lang_menu")[0].classList.toggle('onclick')
 }
 
+window.addEventListener('scroll', function(){
+	var nowScroll = this.document.body.scrollTop;
+	console.log(nowScroll)
+	
+	if(nowScroll > 0){
+		this.document.getElementsByClassName('header')[0].style.top = '-80px';
+	} else if(nowScroll <1){
+		this.document.getElementsByClassName('header')[0].style.top = '0px';
+	}
+})
+
 console.log('Detected Language : ' + getLang());

@@ -27,7 +27,7 @@
         </script>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div id="HeaderArticle_1">
                 <a href="index.html">
                     <img src="src/images/logo.png" width="90%">
@@ -236,5 +236,16 @@
 
         if (getLang() == "ko")
             setLanguage(getLang());
+    </script>
+    <!-- Hide Header Script -->
+    <script>
+        $(window).scroll(function(evt){
+            var y = $(this).scrollTop();
+            if (y > 120) {
+                $('.header').removeClass('fixed');
+            } else {
+                $('.header').addClass('fixed');
+            }
+        })
     </script>
 </html>
