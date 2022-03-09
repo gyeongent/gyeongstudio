@@ -381,6 +381,7 @@ footer > p {
 
     #MainSection {
         height: 100vh;
+        background-attachment: local;
     }
 
     #MainSection > p {
@@ -391,6 +392,7 @@ footer > p {
 
     #MainSection_PFO {
         height: 100vh;
+        background-attachment: local;
     }
 
     #MainSection_PFO > p {
