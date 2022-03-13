@@ -29,7 +29,7 @@
         <header class="header">
             <div id="HeaderArticle_1">
                 <a href="#">
-                    <img src="src/images/logo.svg" width="90%">
+                    <img src="src/images/logo_ukraine.svg" width="90%">
                 </a>
                 <ul>
                     <li>
@@ -84,7 +84,7 @@
         <footer>
             <p>(C) 2022. by GYEONG Studio.</p>
             <div class="Lang_sel" onclick="LangSelClick()">
-                <p data-langNum="4">Language &nbsp;<i class="fa fa-caret-up"></i></p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Translate_%28CoreUI_Icons_v1.0.0%29.svg">
                 <div class="Lang_menu">
                     <ul>
                         <li>
@@ -100,6 +100,11 @@
                         <li>
                             <div class="Lang_btn" data-lang="ja">
                                 &#127471;&#127477; 日本語
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="uk">
+                                &#127482;&#127462; українська
                             </div>
                         </li>
                     </ul>
@@ -118,7 +123,7 @@
         1: 'Download',
         2: 'This is GYEONG Studio',
         3: 'The website is being prepared<br>please wait :)',
-        4: 'Language &nbsp;<i class="fa fa-caret-up"></i>'
+        4: ''
         };
 
         $.lang.ko = {
@@ -126,7 +131,7 @@
         1: '다운로드',
         2: 'GYEONG Studio에 오신 것을 환영합니다.',
         3: '웹사이트 준비중입니다.<br>잠시만 기다려주세요 :)',
-        4: '언어 &nbsp;<i class="fa fa-caret-up"></i>'
+        4: ''
         };
 
         $.lang.ja = {
@@ -134,7 +139,15 @@
         1: 'ダウンロード',
         2: 'GYEONG Studioへようこそ。',
         3: 'ウェブサイトを準備中です。<br>少々お待ちくださいませ :)',
-        4: '言語 &nbsp;<i class="fa fa-caret-up"></i>',
+        4: '',
+        }
+
+        $.lang.uk = {
+        0: 'Портфоліо',
+        1: 'Завантажити',
+        2: 'Це GYEONG Studio',
+        3: 'Сайт готується<br>будь ласка, зачекайте :)',
+        4: ''
         }
 
         /**
@@ -158,7 +171,7 @@
 
         if (getLang() == getLang())
             setLanguage(getLang());
-        else if (getLang() != "en", "ko", "ja")
+        else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
     </script>
 </html>
