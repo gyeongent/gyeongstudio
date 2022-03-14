@@ -28,7 +28,7 @@
     <body>
         <header class="header">
             <div id="HeaderArticle_1">
-                <a href="#MainSection">
+                <a href="index.html">
                     <img src="src/images/logo_ukraine.svg" width="90%">
                 </a>
                 <ul>
@@ -67,42 +67,22 @@
                 </ul>
             </div>
         </header>
-        <div id="MainSection">
-            <p data-langNum="2">
-                This is GYEONG Studio
-            </p>
-            <div class="ScrollDown_icon">
-                <a href="#ContentsSection">
-                    <p>Scroll Down</p>
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-            </div>
-        </div>
         <div id="ContentsSection">
-            <div id="NewsTap">
-                <div id="NewsTapContents">
-                    <p data-langNum="3">
+            <div id="NewsPage">
+                <div id="NewsSideTitle">
+                    <p id="NewsTitle" data-langNum="3">
                         News
                     </p>
-                    <div data-lang="5" id="NewsMore">
-                        <a href="news.html">
-                            More &#xE001;
-                        </a>
-                    </div>
                 </div>
-                <hr>
-                
-                    <div id="NewsContents_Box">
-                        <a href="news/2022/03/14.html">
-                            <div class="NewsContents" data-langNum="4">
-                                The web page has been opened.<p class="New_icon">NEW</p>
-                                <p id="NewsDate">March 14, 2022</p>
-                            </div>
-                        </a>
-                        <!-- <div class="NewsContents">
+                <div id="NewsRightContents">
+                    <a href="news/2022/03/14.html">
+                        <div class="NewsContents" data-langNum="4">
+                            <p class="New_icon_inpage">NEW</p>
                             The web page has been opened.
-                        </div> -->
-                    </div>
+                            <p id="NewsDate">March 14, 2022</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <footer>
@@ -147,7 +127,7 @@
         1: 'Download',
         2: 'This is GYEONG Studio',
         3: 'News',
-        4: 'The web page has been opened. <p class="New_icon">NEW</p><p id="NewsDate">March 14, 2022</p>'
+        4: '<p class="New_icon_inpage">NEW</p> The web page has been opened. <p id="NewsDate">March 14, 2022</p>'
         };
 
         $.lang.ko = {
@@ -155,7 +135,7 @@
         1: '다운로드',
         2: 'GYEONG Studio에<br>오신 것을 환영합니다.',
         3: '뉴스',
-        4: '웹페이지가 오픈되었습니다. <p class="New_icon">NEW</p><p id="NewsDate">2022년 3월 14일</p>'
+        4: '<p class="New_icon_inpage">NEW</p> 웹페이지가 오픈되었습니다. <p id="NewsDate">2022년 3월 14일</p>'
         };
 
         $.lang.ja = {
@@ -163,7 +143,7 @@
         1: 'ダウンロード',
         2: 'GYEONG Studioへようこそ。',
         3: 'ニュース',
-        4: 'ウェブページがオープンしました。 <p class="New_icon">NEW</p><p id="NewsDate">2022年 3月 14日</p>',
+        4: '<p class="New_icon_inpage">NEW</p> ウェブページがオープンしました。 <p id="NewsDate">2022年 3月 14日</p>',
         }
 
         $.lang.uk = {
@@ -171,7 +151,7 @@
         1: 'Завантажити',
         2: 'Це GYEONG Studio',
         3: 'Новини',
-        4: 'Веб-сторінку відкрито. <p class="New_icon">NEW</p><p id="NewsDate">14/03/2022</p>'
+        4: '<p class="New_icon_inpage">NEW</p> Веб-сторінку відкрито. <p id="NewsDate">14/03/2022</p>'
         }
 
         /**
