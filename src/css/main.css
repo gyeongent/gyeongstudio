@@ -7,7 +7,8 @@ html, body {
     padding: 0;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     overflow-x: hidden;
-    height: 100%;
+    height: auto;
+    min-height: 100vh;
     scroll-behavior: smooth;
 }
 
@@ -220,6 +221,58 @@ footer > p {
     transition: all 0.2s ease-in-out;
 }
 
+#NewsTap {
+    margin: 75px 75px;
+    width: max-content;
+}
+
+#NewsTap > p {
+    width: max-content;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+#NewsTap > hr {
+    width: auto;
+    height: 5px;
+    background-color: black;
+    margin-bottom:0;
+}
+
+.NewsContents {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 100px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    background-color: white;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: block;
+}
+
+.New_icon {
+    font-size: 9px;
+    border-radius: 5px;
+    background-color: red;
+    width: max-content;
+    padding: 2px 5px;
+    color:white;
+    float:right;
+    margin-left: 9px;
+    margin-top: 2px;
+}
+
+.NewsContents:hover {
+    background-color: rgb(240, 240, 240);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
 /* PORTFOLIO STYLE */
 
 #MainSection_PFO {
@@ -422,6 +475,10 @@ footer > p {
 
 @media (max-width: 768px) {
 
+    html, body {
+        height: 100%;
+    }
+
     .header {
         display: block;
         justify-content: none;
@@ -435,7 +492,7 @@ footer > p {
     }
 
     .ScrollDown_icon {
-        margin-top: 50%;
+        margin-top: 20%;
         visibility: visible;
         filter: drop-shadow(0 0 0.7rem black);
     }
