@@ -2,18 +2,27 @@ function newsViewer(strValue)
 {
 	var newsLayer1 = document.getElementById('portfolio_contents_1');
 	var newsLayer2 = document.getElementById('portfolio_contents_2');
+	var newsLayer3 = document.getElementById('portfolio_contents_3');
 
 	if (strValue == "1") {
 		newsLayer1.style.display = "block";
 		newsLayer2.style.display = "none";
+		newsLayer3.style.display = "none";
 	}
 	else if (strValue == "2") {
 		newsLayer1.style.display = "none";
 		newsLayer2.style.display = "block";
+		newsLayer3.style.display = "none";
+	}
+	else if (strValue == "3") {
+		newsLayer1.style.display = "none";
+		newsLayer2.style.display = "none";
+		newsLayer3.style.display = "block";
 	}
 	else {
 		newsLayer1.style.display = "none";
 		newsLayer2.style.display = "none";
+		newsLayer3.style.display = "none";
 	}
 }
 

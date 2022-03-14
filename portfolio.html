@@ -34,14 +34,14 @@
         </script>
     </head>
     <body>
-        <header class="header" id="top">
+        <header class="header">
             <div id="HeaderArticle_1">
                 <a href="index.html">
                     <img src="src/images/logo_ukraine.svg" width="90%">
                 </a>
                 <ul>
                     <li>
-                        <a href="#top" style="color: black;"data-langNum="0">
+                        <a href="#MainSection_PFO" style="color: black;"data-langNum="0">
                             Portfolio
                         </a>
                     </li>
@@ -96,7 +96,12 @@
                             </li>
                             <li>
                                 <div id="portfolio_btn" onclick="javascript:newsViewer(2)" data-langNum="4">
-                                    <p>Games</p>
+                                    <p>Game</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="portfolio_btn" onclick="javascript:newsViewer(3)" data-langNum="11">
+                                    <p>Music</p>
                                 </div>
                             </li>
                         </ul>
@@ -117,10 +122,21 @@
                             <li>
                                 <div id="portfolio_contents_2">
                                     <p class="portfolio_contents_title" data-langNum="8">Challenged.</p>
-                                    <p class="portfolio_contents_contents" data-langNum="9">-</p>
+                                    <p class="portfolio_contents_contents" data-langNum="9">Since childhood, I have loved to be creative.  Growing up like that, I was able to create the works of my imagination, and in all of them, I tried to contain a message that anyone could easily “sympathize” with.</p>
                                     <p class="portfolio_contents_link">
                                         <a href="javascript:soon();" data-langNum="10">
                                             Game download &#xE001;
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="portfolio_contents_3">
+                                    <p class="portfolio_contents_title" data-langNum="12">Preparing...</p>
+                                    <p class="portfolio_contents_contents" data-langNum="13">-</p>
+                                    <p class="portfolio_contents_link">
+                                        <a href="javascript:soon();" data-langNum="14">
+                                            Preparing...
                                         </a>
                                     </p>
                                 </div>
@@ -195,14 +211,17 @@
         1: 'Download',
         2: 'My fantasy world',
         3: 'Graphics',
-        4: 'Games',
+        4: 'Game',
         5: 'Add empathy to the design.',
         6: 'Since childhood, I have loved to be creative.  Growing up like that, I was able to create the works of my imagination, and in all of them, I tried to contain a message that anyone could easily “sympathize” with.',
         7: 'Go to portfolio site &#xE001;',
         8: 'Challenge.',
         9: 'Beyond 2D and 3D graphics, I wanted to create various works using them.The challenge to <br> game is the first challenge to it. I have tried to put in a variety of variations and functions, and I will grow with better creativity and more in the future.',
         10: 'Game download &#xE001;',
-        11: '',
+        11: 'Music',
+        12: 'The emotions I feelings.',
+        13: 'Since I was young, I have been sympathized and comforted by listening to music whenever I was depressed or struggling. At this time, the experience of "sympathy" was one of the very important roles in building the current graphic portfolio.<br>Now its time to make someone feel comforted.',
+        14: 'In ready',
         };
 
         $.lang.ko = {
@@ -217,7 +236,10 @@
         8: '도전기',
         9: '2D 및 3D 그래픽을 넘어 이것을 활용한 다양한 작품을 만들고자 했습니다.<br>게임에 대한 도전이 그것에 대한 첫 번째 도전입니다. 다양한 바리에이션과 기능들을 넣으려 노력했고, 앞으로 더욱 나은 창의력과 더 많은 성장할 것 입니다.',
         10: '게임 다운로드 &#xE001;',
-        11: '',
+        11: '음악',
+        12: '느끼는 감정들',
+        13: '어렸을 적부터 우울할때나 힘이 들때마다 음악을 들으며 공감하고 위로를 받아왔습니다. 이때 "공감"했던 경험이 지금의 그래픽 포트폴리오를 쌓아가는 데에 아주 중요했던 역할 중 하나였습니다.<br>이제 누군가에게 위로의 감정을 느끼게 해줄 차례입니다.',
+        14: '준비중입니다',
         };
 
         $.lang.ja = {
@@ -232,7 +254,10 @@
         8: '導電器',
         9: '2Dや3Dグラフィックス以外にも、それらを使って様々な作品を作りたいと考えていました。<br>ゲームへの挑戦は、ゲームに対する最初の挑戦です。 僕は様々なバリエーションと機能を取り入れようと努力しており、これからもより良い創造性とより多くのものを持って成長していきます。',
         10: 'ゲーム ダウンロード &#xE001;',
-        11: '',
+        11: '音楽',
+        12: '感じる感情',
+        13: '幼い頃から憂鬱な時や辛い時に音楽を聞いて共感して慰められてきました。 この時"共感"した経験が今のグラフィックポートフォリオを築いていく上でとても重要な役割の一つでした。<br>今度は誰かに慰めの気持ちを感じさせてくれる順番です',
+        14: '準備中です'
         }
 
         $.lang.uk = {
@@ -247,7 +272,10 @@
         8: 'Виклик',
         9: 'Окрім 2D та 3D-графіки, я хотів створювати різноманітні роботи, використовуючи їх. Виклик для гри <br> – це перший виклик для неї. Я намагався впровадити різноманітні варіації та функції, і я буду розвиватися з кращою творчістю та більше в майбутньому.',
         10: 'Завантаження гри &#xE001;',
-        11: ''
+        11: 'музика',
+        12: 'Емоції, які я відчуваю',
+        13: 'Ще з дитинства, коли я був у депресії чи стресі, я слухав музику, щоб співпереживати і втішити мене. Досвід, який я мав на той час, був однією з найважливіших ролей у створенні мого графічного портфоліо сьогодні.<br>Тепер настав час дати комусь відчуття комфорту.',
+        14: 'Незабаром',
         }
 
         /**
