@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="javascript:getLang();">
         <title>
-            Download | GYEONG Studio
+            GYEONG Studio
         </title>
         <meta charset="UTF-8" />
+        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+        <link rel="manifest" href="src/favicon/site.webmanifest">
+        <link rel="mask-icon" href="src/favicon/safari-pinned-tab.svg" color="#000000">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="theme-color" content="#000000">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="GyeongMin Lee(GYEONG)" />
         <meta http-equiv="Reply-To" content="info@gyeong.net" />
         <meta http-equiv="Email" content="info@gyeong.net" />
         <meta http-equiv="Publisher" content="GYEONG Studio" />
-        <meta name="Keywords" content="Game, 게임, Graphics, 그래픽, 3D, html, css ,js" />
+        <meta name="Keywords" content="Game, 게임, Graphics, 그래픽, 3D, html, css, js, GYEONG, 경, 이경민" />
         <meta name="description" content="GYEONG Studio Website, The work of Graphics and Game development." />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" type="text/css" href="src/css/main.css" />
@@ -19,19 +26,19 @@
         <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div id="HeaderArticle_1">
-                <a href="index.html">
-                    <img src="src/images/logo.png" width="90%">
+                <a href="#">
+                    <img src="src/images/logo_ukraine.svg" width="90%">
                 </a>
                 <ul>
                     <li>
-                        <a href="portfolio.html" data-langNum="0">
+                        <a href="portfolio.html" data-langNum="0" style="color: lightgrey;">
                             Portfolio
                         </a>
                     </li>
                     <li>
-                        <a href="#" data-langNum="1">
+                        <a href="javascript:soon();" style="color: lightgrey;" data-langNum="1">
                             Download
                         </a>
                     </li>
@@ -60,14 +67,24 @@
                 </ul>
             </div>
         </header>
-        <div id="MainSection"><p data-langNum="2">This is GYEONG Studio</p></div>
+        <div id="MainSection">
+            <p data-langNum="2">
+                This is GYEONG Studio
+            </p>
+            <div class="ScrollDown_icon">
+                <a href="#ContentsSection">
+                    <p>Scroll Down</p>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
         <div id="ContentsSection">
             <p data-langNum="3">The website is being prepared<br>please wait :)</p>
         </div>
         <footer>
             <p>(C) 2022. by GYEONG Studio.</p>
-            <div class="Lang_sel">
-                <p data-langNum="4">Language &nbsp;<i class="fa fa-caret-up"></i></p>
+            <div class="Lang_sel" onclick="LangSelClick()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Translate_%28CoreUI_Icons_v1.0.0%29.svg">
                 <div class="Lang_menu">
                     <ul>
                         <li>
@@ -78,6 +95,16 @@
                         <li>
                             <div class="Lang_btn" data-lang="ko">
                                 &#127472;&#127479; 한국어
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="ja">
+                                &#127471;&#127477; 日本語
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Lang_btn" data-lang="uk">
+                                &#127482;&#127462; українська
                             </div>
                         </li>
                     </ul>
@@ -96,23 +123,31 @@
         1: 'Download',
         2: 'This is GYEONG Studio',
         3: 'The website is being prepared<br>please wait :)',
-        4: 'Language &nbsp;<i class="fa fa-caret-up"></i>'
+        4: ''
         };
 
         $.lang.ko = {
         0: '포트폴리오',
         1: '다운로드',
-        2: 'GYEONG Studio에 오신 것을 환영합니다.',
+        2: 'GYEONG Studio에<br>오신 것을 환영합니다.',
         3: '웹사이트 준비중입니다.<br>잠시만 기다려주세요 :)',
-        4: '언어 &nbsp;<i class="fa fa-caret-up"></i>'
+        4: ''
         };
 
         $.lang.ja = {
-        0: '',
-        1: '',
-        2: '',
-        3: '',
+        0: 'ポートフォリオ',
+        1: 'ダウンロード',
+        2: 'GYEONG Studioへようこそ。',
+        3: 'ウェブサイトを準備中です。<br>少々お待ちくださいませ :)',
         4: '',
+        }
+
+        $.lang.uk = {
+        0: 'Портфоліо',
+        1: 'Завантажити',
+        2: 'Це GYEONG Studio',
+        3: 'Сайт готується<br>будь ласка, зачекайте :)',
+        4: ''
         }
 
         /**
@@ -134,7 +169,9 @@
         setLanguage(lang); 
         });
 
-        if (getLang() == "ko")
+        if (getLang() == getLang())
             setLanguage(getLang());
+        else if (getLang() != "en", "ko", "ja", "uk")
+                setLanguage("en");
     </script>
 </html>
