@@ -347,6 +347,58 @@ footer > p {
     letter-spacing: -0.5px;
 }
 
+/* 404 */
+
+#MainSection_404 {
+    width: 100%;
+    height: 100vh;
+    filter:opacity(70%);
+    background-image: url('https://portfolio.gyeong.net/static/media/missing_thumb.71c1a346.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    z-index: -5;
+    text-align: center;
+}
+
+#MainSection_404 > p {
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: 700;
+    padding-top: 50vh;
+    filter: drop-shadow(0 0 0.7rem black);
+}
+
+#MainSection_404 > div {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: 400;
+    padding-top: 2vh;
+    filter: drop-shadow(0 0 0.7rem black);
+    transition: all 0.5s ease-in-out;
+}
+
+#href_404 {
+    color: white;
+}
+
+#MainSection_404 > div:hover {
+    width: 100%;
+    color: rgb(170, 170, 170);
+    transition: all 0.5s ease-in-out;
+}
+
+#MainSection_404 > div:hover #href_404:after {
+    content: ' \0020 \003E ';
+}
+
 @media (max-width: 768px) {
 
     .header {
@@ -395,6 +447,11 @@ footer > p {
     }
 
     #MainSection_PFO {
+        height: 100vh;
+        background-attachment: local;
+    }
+
+    #MainSection_404 {
         height: 100vh;
         background-attachment: local;
     }
