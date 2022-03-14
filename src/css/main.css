@@ -233,6 +233,13 @@ footer > p {
     letter-spacing: -1px;
 }
 
+#NewsDate {
+    font-size: 10px;
+    margin-top: 5px;
+    color: grey;
+    font-weight: 200;
+}
+
 #NewsTap > hr {
     width: auto;
     height: 5px;
