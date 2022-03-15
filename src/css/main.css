@@ -245,6 +245,11 @@ footer > p {
     width: max-content;
 }
 
+#Home_Top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #NewsTapContents {
     display: flex;
     justify-content: space-between;
@@ -669,6 +674,10 @@ footer > p {
         padding-top: 30%
     }
 
+    #Home_Top {
+        display: block;
+    }
+
     #PFO_SECTION_1 {
         display: block;
         margin-top: 50px;
@@ -721,8 +730,8 @@ footer > p {
 
     #NewsRightContents {
         width: 75%;
-        margin-left: 0;
-
+        margin: 0;
+        padding: 14%;
     }
 
     .NewsInPages {
@@ -730,9 +739,13 @@ footer > p {
         width: 100%;
     }
 
+    .NewsInPages {
+        line-height: 50px;
+    }
+
     .NewsInPages_Content {
         width: 100%;
-        word-break: keep-all;
+        word-break: break-all;
     }
 
     #NewsControls {
@@ -741,6 +754,7 @@ footer > p {
 
     #NewsTap {
         width: 75%;
+        margin: 14%;
     }
     
 }
