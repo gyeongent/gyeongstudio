@@ -1,6 +1,22 @@
 /* MAIN STYLE */
 
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@font-face {
+    font-family: 'Golca Thin';
+    src: url(/src/font/GolcaThin.ttf);
+}
+@font-face {
+    font-family: 'Golca Regular';
+    src: url(/src/font/GolcaRegular.ttf);
+}
+@font-face {
+    font-family: 'Golca Extra Light';
+    src: url(/src/font/GolcaExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Golca Bold';
+    src: url(/src/font/GolcaBold.ttf);
+}
 
 html, body {
     margin: 0;
@@ -10,6 +26,7 @@ html, body {
     height: 100%;
     scroll-behavior: smooth;
 }
+
 
 hr {
     border: 0px;

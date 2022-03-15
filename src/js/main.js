@@ -53,3 +53,8 @@ function LangSelClick() {
 }
 
 console.log('Detected Language : ' + getLang());
+
+if (getLang() == "uk") {
+	document.querySelectorAll(html).style.font = 'Golca Extra Light'
+	console.log('Peace')
+}
