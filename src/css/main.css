@@ -756,5 +756,11 @@ footer > p {
         width: 75%;
         margin: 14%;
     }
+
+    .New_icon {
+        float:left;
+        margin-left: -2px;
+        margin-right: 5px;
+    }
     
 }
