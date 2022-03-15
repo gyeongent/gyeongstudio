@@ -707,6 +707,9 @@ footer > p {
         text-align: center;
         writing-mode:unset;
         text-align: center;
+        position: static;
+        border-bottom: 1px solid rgb(240, 240, 240);
+        word-break: keep-all;
     }
 
     #NewsTitle {
@@ -716,6 +719,12 @@ footer > p {
         font-size: 55px;
     }
 
+    #NewsRightContents {
+        width: 75%;
+        margin-left: 0;
+
+    }
+
     .NewsInPages {
         height:100%;
         width: 100%;
@@ -723,10 +732,15 @@ footer > p {
 
     .NewsInPages_Content {
         width: 100%;
+        word-break: keep-all;
     }
 
     #NewsControls {
         width: 100%;
+    }
+
+    #NewsTap {
+        width: 75%;
     }
     
 }
