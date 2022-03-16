@@ -58,3 +58,7 @@ if (getLang() == "uk") {
 	document.querySelectorAll(html).style.font = 'Golca Extra Light'
 	console.log('Peace')
 }
+
+if (window.location == "https://gyeong.net/news/") {
+	window.location.href = "https://gyeong.net/news"
+}
