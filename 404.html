@@ -24,6 +24,67 @@
         <script type="text/javascript" src="src/js/main.js"></script>
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+        <style>
+            #MainSection_404 {
+                width: 100%;
+                height: 100vh;
+                filter:opacity(70%);
+                background-image: url('https://portfolio.gyeong.net/static/media/missing_thumb.71c1a346.jpg');
+                background-position:center;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-attachment: fixed;
+                z-index: -5;
+                text-align: center;
+            }
+            
+            #MainSection_404 > p {
+                width: 100%;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                letter-spacing: -1px;
+                font-weight: 700;
+                padding-top: 50vh;
+                filter: drop-shadow(0 0 0.7rem black);
+            }
+            
+            #MainSection_404 > div {
+                width: 100%;
+                color: white;
+                font-size: 15px;
+                text-align: center;
+                letter-spacing: -1px;
+                font-weight: 300;
+                padding-top: 2vh;
+                filter: drop-shadow(0 0 0.7rem black);
+                transition: all 0.5s ease-in-out;
+            }
+            
+            #MainSection_404 > div > a:hover ~ hr {
+                width: 107px;
+                color: rgb(170, 170, 170);
+                transition: all 0.2s ease-in-out;
+                height: 1px;
+            }
+            
+            
+            #href_404 {
+                color: white;
+                transition: all 0.35s ease-in-out;
+            }
+            
+            #MainSection_404 > div > a:hover {
+                color: rgb(170, 170, 170);
+                transition: all 0.35s ease-in-out;
+                
+            }
+            
+            #MainSection_404 > div > hr {
+                width: 0%;
+                transition: all 0.2s ease-in-out;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
@@ -66,39 +127,6 @@
                 <hr>
             </div>
         </div>
-        <!--
-        <footer>
-            <p>(C) 2022. by GYEONG Studio.</p>
-            <div class="Lang_sel" onclick="LangSelClick()">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Translate_%28CoreUI_Icons_v1.0.0%29.svg">
-                <div class="Lang_menu">
-                    <ul>
-                        <li>
-                            <div class="Lang_btn" data-lang="en">
-                                &#127482;&#127475; English
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Lang_btn" data-lang="ko">
-                                &#127472;&#127479; 한국어
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Lang_btn" data-lang="ja">
-                                &#127471;&#127477; 日本語
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Lang_btn" data-lang="uk">
-                                &#127482;&#127462; українська
-                            </div>
-                        </li>
-                    </ul>
-                    <hr>
-                </div>
-            </div>
-        </footer>
-        -->
     </body>
     <!-- Language Script -->
     <script>
