@@ -519,11 +519,12 @@ footer > p {
 
 #NewsSideTitle {
     width: 25%;
-    height: 100%;
+    height: max-content;
     writing-mode: vertical-rl;
-    position: fixed;
+    position: sticky;
     left: 0;
     background-color: white;
+    top: 30%;
 }
 
 #NewsTitle {
@@ -537,8 +538,7 @@ footer > p {
 
 #NewsRightContents {
     padding: 75px;
-    width: 70%;
-    margin-left: 25%;
+    width: 100%;
 }
 
 .NewsInPages {
