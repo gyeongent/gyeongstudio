@@ -15,6 +15,15 @@ html, body {
     word-wrap: break-word;
 }
 
+body.reveal {
+    opacity: 1;
+}
+
+body.hidden {
+    opacity: 0
+}
+
+
 hr {
     border: 0px;
     height: 1px;

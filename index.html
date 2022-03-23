@@ -24,6 +24,7 @@
         <script type="text/javascript" src="src/js/main.js"></script>
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="src/js/smoothwheel.js"></script>
     </head>
     <body>
         <header class="header">
@@ -291,5 +292,10 @@
             setLanguage(getLang());
         else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('body').smoothWheel()
+        });
     </script>
 </html>
