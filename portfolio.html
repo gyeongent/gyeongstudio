@@ -24,6 +24,8 @@
         <script type="text/javascript" src="src/js/main.js"></script>
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
         <style>
             a.clicked { color:#000; }
             </style>
@@ -75,7 +77,7 @@
                 </ul>
             </div>
         </header>
-        <div id="MainSection_PFO">
+        <div id="MainSection_PFO" onscroll="parallax()">
             <p data-langNum="2">My fantasy world</p>
             <div class="ScrollDown_icon">
                 <a href="#ContentsSection">
@@ -301,5 +303,12 @@
             setLanguage(getLang());
         else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
+    </script>
+    <script>
+        function parallax(){
+            var background = document.getElementById("MainSection_PFO");
+
+            background.style.backgroundPosition = "70px";
+        }
     </script>
 </html>

@@ -60,6 +60,7 @@ button {
     appearance:none;
 }
 
+
 .header {
     width: 100%;
     height: 80px;
@@ -262,9 +263,20 @@ footer > p {
     clear:left;
 }
 
+.NewsContentsInfo {
+    display: flex;
+}
+
 #NewsDate {
-    font-size: 10px;
-    margin-top: 5px;
+    font-size: 11px;
+    margin-top: 6px;
+    color: grey;
+    font-weight: 200;
+}
+
+.Newsday {
+    font-size: 11px;
+    margin-top: 6px;
     color: grey;
     font-weight: 200;
 }
@@ -295,6 +307,7 @@ footer > p {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     display: block;
+    clear:both;
 }
 
 .New_icon {
@@ -304,9 +317,8 @@ footer > p {
     width: max-content;
     padding: 2px 5px;
     color:white;
-    float:right;
-    margin-left: 9px;
-    margin-top: 2px;
+    margin-top: 5px;
+    margin-right: 8px;
 }
 
 .New_icon_inpage {
@@ -377,11 +389,10 @@ footer > p {
     width: 100%;
     height: 35vw;
     filter:opacity(70%);
-    background-image: url('https://portfolio.gyeong.net/static/media/honey_moon.9e198d58.png');
-    background-position:center;
+    background: url('https://portfolio.gyeong.net/static/media/honey_moon.9e198d58.png') fixed;
+    background-position: 0;
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed;
     z-index: -5;
     text-align: center;
 }
@@ -741,11 +752,6 @@ footer > p {
         margin: 14%;
     }
 
-    .New_icon {
-        float:left;
-        margin-left: -2px;
-        margin-right: 5px;
-    }
 
     .Lang_sel {
         margin-left: 37%;

@@ -1,3 +1,4 @@
+
 function newsViewer(strValue)
 {
 	var newsLayer1 = document.getElementById('portfolio_contents_1');
@@ -94,3 +95,11 @@ function pageTransition(nodeList) {
 		})
 	})
 }
+
+let counter = document.querySelector('#NewsDDay');
+	let today = new Date(), //현재 날짜 가져오기
+		dday = new Date("Dec 12,2021, 00:00:00").getTime(), //디데이
+		gap = dday - today,
+		result = Math.floor(gap / (1000 * 60 * 60 * 24));
+
+	counter.innerHTML = `D-${result}`
