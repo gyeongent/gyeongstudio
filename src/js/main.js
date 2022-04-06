@@ -27,6 +27,12 @@ function newsViewer(strValue)
 	}
 }
 
+function versionDialog()
+{
+	var para = document.getElementById("modal_button");
+	para.classList.toggle("btnactive")
+}
+
 function soon() {
   alert("Soon")
 }

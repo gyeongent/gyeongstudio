@@ -636,6 +636,57 @@ footer > p {
     font-size: 15px;
 }
 
+#modal_button {
+    cursor: pointer;
+    width: max-content;
+    font-weight: 700;
+    margin-bottom: 20px;;
+}
+
+#modal_button::after {
+    content: " ▼";
+}
+
+.btnactive + #dialog_overlay {
+    display: block;
+}
+
+#modal_button.btnactive::after {
+    content: " ▲";
+}
+
+#dialog_overlay {
+    width: max-content;
+    padding: 20px;
+    height: max-content;
+    justify-content: center;
+    display: none;
+    margin-top: -20px;
+}
+
+#dialog_overlay > hr {
+    width: max-content;
+}
+
+.version_title {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.version_desc {
+    margin-bottom: 20px;
+}
+
+#now_version_icon {
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
 @media (max-width: 768px) {
 
     html, body {
