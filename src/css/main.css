@@ -587,6 +587,55 @@ footer > p {
     font-weight: 200;
 }
 
+/* Download Page */
+
+.download_title {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+
+.download_title > div > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.download_info {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.download_article {
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    padding: 50px;
+    text-align: center;
+    width: max-content;
+}
+
+#FontSection {
+    padding: 0 14%;
+}
+
+#FontTitle {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -1;
+}
+
+.download_title > div > ul > li {
+    padding: 8px 30px;
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 50px;
+    margin-right: 8px;
+    background-color: skyblue;
+    font-size: 15px;
+}
+
 @media (max-width: 768px) {
 
     html, body {
