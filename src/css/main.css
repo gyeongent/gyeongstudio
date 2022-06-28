@@ -687,6 +687,60 @@ footer > p {
     margin-left: 10px;
 }
 
+/* discography page */
+#disco_nav {
+    float: right;
+    margin-right: 100px;
+    font-size: 23px;
+    font-weight: 700;
+    position: sticky;
+    top: 80px;;
+}
+
+#disco_nav > ul {
+    list-style: none;
+    display: flex;
+}
+
+#disco_nav > ul > li {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+    border-style: hidden solid hidden solid;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#disco_nav > ul > li:hover {
+    color: lightgray;
+    transition: all 0.2s ease;
+}
+
+#disco_contents {
+    position: sticky;
+    padding-top: 150px;
+}
+
+.disco_cover {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.disco_info {
+    display: flex;
+    justify-content:space-between;
+    padding: 12px;
+}
+
+#disco_digital {
+    width: max-content;
+}
+
+#disco_digital > ul {
+    list-style: none;
+}
+
 @media (max-width: 768px) {
 
     html, body {
@@ -741,6 +795,7 @@ footer > p {
     #MainSection_PFO {
         height: 100vh;
         background-attachment: local;
+        background-position: center;
     }
 
     #MainSection_404 {
@@ -850,6 +905,35 @@ footer > p {
     #NewsTap {
         width: 75%;
         margin: 14%;
+    }
+
+    #disco_nav {
+        float: none;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    #disco_contents {
+        width: max-content;
+        height:max-content;
+        margin-left: -25%;
+        padding-top: 50px;
+    }
+
+    #disco_nav > ul {
+        list-style: none;
+        display:contents;
+    }
+
+    #disco_nav > ul > li {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border: 1px solid lightgray;
+        border-style: solid hidden solid hidden;
+        cursor: pointer;
+        transition: all 0.2s ease;
     }
 
 

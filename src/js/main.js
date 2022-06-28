@@ -27,6 +27,40 @@ function newsViewer(strValue)
 	}
 }
 
+function discoViewer(strValue)
+{
+	var newsLayer1 = document.getElementById('disco_CD');
+	var newsLayer2 = document.getElementById('disco_digital');
+	var newsLayer3 = document.getElementById('disco_album');
+
+	if (strValue == "0") {
+		newsLayer1.style.display = "block";
+		newsLayer2.style.display = "block";
+		newsLayer3.style.display = "block";
+	}
+	else if (strValue == "1") {
+		newsLayer1.style.display = "block";
+		newsLayer2.style.display = "none";
+		newsLayer3.style.display = "none";
+	}
+	else if (strValue == "2") {
+		newsLayer1.style.display = "none";
+		newsLayer2.style.display = "block";
+		newsLayer3.style.display = "none";
+	}
+	else if (strValue == "3") {
+		newsLayer1.style.display = "none";
+		newsLayer2.style.display = "none";
+		newsLayer3.style.display = "block";
+	}
+	else {
+		newsLayer1.style.display = "none";
+		newsLayer2.style.display = "none";
+		newsLayer3.style.display = "none";
+	}
+}
+
+
 function versionDialog()
 {
 	var para = document.getElementById("modal_button");
@@ -62,8 +96,8 @@ function LangSelClick() {
 console.log('Detected Language : ' + getLang());
 
 if (getLang() == "uk") {
-	document.querySelectorAll(html).style.font = 'Golca Extra Light'
-	console.log('Peace')
+	document.querySelectorAll(html).style.font = 'Golca Extra Light';
+	console.log('Peace');
 }
 
 if (window.location == "https://gyeong.net/news/") {
