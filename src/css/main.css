@@ -132,32 +132,41 @@ button {
 #MainSection {
     width: 100%;
     height: 35vw;
-    filter:opacity(70%);
-    background-image: url('https://portfolio.gyeong.net/static/media/trip_of_memory_thumb.80641e9f.jpg');
+    filter: opacity(80%);
+    background-image: url('../images/bg/contradict_background.png');
     background-position:center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
-    z-index: -5;
     text-align: center;
 }
 
-#MainSection > p {
+.uppertitle {
+    width: 100%;
+    top: 0;
+    position: relative;
+}
+
+.maintitle {
+    position: absolute;
     width: 100%;
     color: white;
     font-size: 50px;
     text-align: center;
     letter-spacing: -1px;
     font-weight: 700;
-    padding-top: 17%;
+    top: 50%;
     filter: drop-shadow(0 0 0.7rem black);
+    z-index: 0;
 }
 
 #ContentsSection {
+    position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 80px;
+    padding-top: 80px;
     margin-bottom: 160px;
+    background-color: white;
 }
 
 #ContentsSection > p {
@@ -834,7 +843,9 @@ footer > p {
     }
 
     .ScrollDown_icon {
-        margin-top: 20%;
+        position: absolute;
+        top: 85%;
+        left: 42vw;
         visibility: visible;
         filter: drop-shadow(0 0 0.7rem black);
     }
@@ -855,13 +866,18 @@ footer > p {
         display: none;
     }
 
+    .uppertitle {
+        margin-bottom: -20vh;
+    }
+
     #MainSection {
         height: 100vh;
         background-attachment: local;
+        
     }
 
-    #MainSection > p {
-        padding-top: 50vh;
+    .maintitle {
+        top: 50%;
         word-break: normal;
         font-size: 10vw;
     }
@@ -888,7 +904,7 @@ footer > p {
     }
 
     #ContentsSection {
-        height: 100%;
+        height: max-content;
         padding-bottom: 500px;
         margin-top: 160px;
     }
@@ -1101,6 +1117,8 @@ footer > p {
 
     footer {
         padding-top: 40px;
+        top: 0;
+        margin-top: -100px;
     }
     
 }
