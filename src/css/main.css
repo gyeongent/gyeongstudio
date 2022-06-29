@@ -11,6 +11,7 @@ html, body {
     letter-spacing: -1px;
     overflow-x: hidden;
     height: 100%;
+    min-height: max-content;
     scroll-behavior: smooth;
     word-wrap: break-word;
 }
