@@ -113,13 +113,17 @@
                 </ul>
             </div>
         </header>
-        <div id="MainSection_PFO" onscroll="parallax()">
-            <p data-langNum="2">My fantasy world</p>
-            <div class="ScrollDown_icon">
-                <a href="#ContentsSection">
-                    <p>Scroll Down</p>
-                    <i class="fa fa-chevron-down"></i>
-                </a>
+        <div class="uppertitle">
+            <div id="MainSection_PFO" onscroll="parallax()">
+                <div class="ScrollDown_icon">
+                    <a href="#ContentsSection">
+                        <p>Scroll Down</p>
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="maintitle" data-langNum="2">
+                    My fantasy world
+                </div>
             </div>
         </div>
         <div id="ContentsSection">
@@ -344,13 +348,7 @@
         else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
     </script>
-    <script>
-        function parallax(){
-            var background = document.getElementById("MainSection_PFO");
-
-            background.style.backgroundPosition = "70px";
-        }
-    </script>
+    
      <script>
         $(document).ready(function () {
         $("#nav-icon4").click(function () {

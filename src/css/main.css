@@ -533,12 +533,12 @@ list-style: none;
 #MainSection_PFO {
     width: 100%;
     height: 35vw;
-    filter:opacity(70%);
+    filter: opacity(80%);
     background: url('https://portfolio.gyeong.net/static/media/honey_moon.9e198d58.png') fixed;
-    background-position: 0;
+    background-position:center;
     background-repeat: no-repeat;
-    background-size:cover;
-    z-index: -5;
+    background-size: cover;
+    background-attachment:fixed;
     text-align: center;
 }
 
@@ -1160,7 +1160,9 @@ list-style: none;
     }
 
     #disco_contents {
+        margin-top: 5vh;
         margin-left: -15%;
+        display: block;
     }
 
     #disco_nav > ul {
@@ -1185,6 +1187,11 @@ list-style: none;
         width: 100%;
         height: 100%;
         overflow: hidden;
+    }
+
+    #disco_CD {
+        width: 100%;
+        margin-bottom: 10vh;
     }
 
     #disco_digital {
