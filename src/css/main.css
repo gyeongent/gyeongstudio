@@ -900,12 +900,17 @@ list-style: none;
     width: 650px;
     height: 650px;
     overflow: hidden;
+    
 }
 
 .disco_cover_big > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+#disco_digital > ul {
+    list-style: none;
 }
 
 .disco_info {
