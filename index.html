@@ -168,10 +168,11 @@
                     <hr>
                     <div id="NewsContents_Box">
                         <a href="#ContentsSection">
-                            <div class="NewsContents" data-langNum="14">
-                                'Anxiety' Release
-                                <p class="NewsDDay"></p>
+                            <div class="NewsContents">
+                                <span data-langNum="14">'Anxiety' Release</span>
+                                <p class="counter"></p>
                             </div>
+                            
                         </a>
                     </div>
                 </div>
@@ -296,7 +297,7 @@
         11: '폰트 제작 결정! <div class="NewsContentsInfo"><p id="NewsDate">2022년 4월 5일</p></div>',
         12: '첫 싱글 앨범이 발매됩니다. <div class="NewsContentsInfo"><p class="New_icon">NEW</p><p id="NewsDate">2022년 6월 29일</p></div>',
         13: '디스코그래피',
-        14: '"불안장애 (Anxiety)" 음원 공개',
+        14: '"불안장애 (Anxiety)" 음원 발매',
         };
 
         $.lang.ja = {
@@ -366,4 +367,13 @@
           });
         });
       </script>
+    <script>
+        let counter = document.querySelector('.counter');
+        let today = new Date(), //현재 날짜 가져오기
+            dday = new Date("July 08,2022, 12:00:00").getTime(), //디데이
+            gap = dday - today,
+            result = Math.floor(gap / (1000 * 60 * 60 * 24));
+        
+        counter.innerHTML = `D-${result}`
+    </script>
 </html>

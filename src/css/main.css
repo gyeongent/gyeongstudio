@@ -247,6 +247,13 @@ footer > p {
     transition: all 0.2s ease-in-out;
 }
 
+.counter {
+    font-size: 15px;
+    margin-top: 6px;
+    color: grey;
+    font-weight: 200;
+}
+
 #nav-icon4 {
     width: 30px;
     height: 45px;
