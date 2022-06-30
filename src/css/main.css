@@ -866,6 +866,7 @@ list-style: none;
 
 #disco_contents {
     margin-top: 150px;
+    display: flex;
 }
 
 .disco_article {
@@ -953,6 +954,14 @@ list-style: none;
 
 #disco_digital {
     width: max-content;
+}
+
+#disco_CD {
+    width: max-content;
+}
+
+#disco_CD > ul {
+    list-style: none;
 }
 
 #disco_digital > ul {

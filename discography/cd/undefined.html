@@ -2,7 +2,7 @@
 <html>
     <head lang>
         <title>
-            Discography | GYEONG Studio
+            Anxiety | GYEONG Studio
         </title>
         <meta charset="UTF-8" />
         <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
@@ -20,31 +20,31 @@
         <meta name="Keywords" content="Game, 게임, Graphics, 그래픽, 3D, html, css, js, GYEONG, 경, 이경민" />
         <meta name="description" content="GYEONG Studio Website, The work of Graphics and Game development." />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" type="text/css" href="src/css/main.css" />
-        <script type="text/javascript" src="src/js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../src/css/main.css" />
+        <script type="text/javascript" src="../../src/js/main.js"></script>
         <script src="https://kit.fontawesome.com/fd41597021.js" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="src/js/smoothwheel.js"></script>
+        <script type="text/javascript" src="../../src/js/smoothwheel.js"></script>
     </head>
     <body>
         <header class="header">
             <div id="HeaderArticle_1">
-                <a href="index.html">
-                    <img src="src/images/logo.svg" width="90%">
+                <a href="../../index.html">
+                    <img src="../../../../src/images/logo.svg" width="90%">
                 </a>
                 <ul>
                     <li>
-                        <a href="portfolio.html" data-langNum="0" style="color: lightgrey;">
+                        <a href="../../portfolio.html" data-langNum="0" style="color: lightgrey;">
                             Portfolio
                         </a>
                     </li>
                     <li>
-                        <a href="discography.html" data-langNum="2" style="color: black;">
+                        <a href="../../discography.html" data-langNum="2" style="color: lightgrey;">
                             Discography
                         </a>
                     </li>
                     <li>
-                        <a href="download.html" style="color: lightgrey;" data-langNum="1">
+                        <a href="../../download.html" style="color: lightgrey;" data-langNum="1">
                             Download
                         </a>
                     </li>
@@ -61,19 +61,19 @@
                     <div>
                         <ul>
                             <li>
-                                <a href="portfolio.html" data-langNum="0">
+                                <a href="../../portfolio.html" data-langNum="0">
                                 Portfolio
                                 </a>
                             </li>
                         <hr align="right">
                             <li>
-                                <a href="discography.html" data-langNum="2">
+                                <a href="../../discography.html" data-langNum="2">
                                 Discography
                                 </a>
                             </li>
                         <hr align="right">
                             <li>
-                                <a href="download.html" data-langNum="1">
+                                <a href="../../download.html" data-langNum="1">
                                 Download
                                 </a>
                             </li>
@@ -112,68 +112,43 @@
                     </p>
                 </div>
                 <div id="NewsRightContents">
-                    <div id="disco_nav">
-                        <ul>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(0)" data-langNum="3">
-                                    <p>전체</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(1)" data-langNum="4">
-                                    <p>CD</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(2)" data-langNum="5">
-                                    <p>Digital·Single</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(3)" data-langNum="6">
-                                    <p>Album</p>
-                                </div>
-                            </li>
-                        </ul>
+                    <div id="NewsControls">
+                        <a href="javascript:history.back();" data-langNum="3">
+                            &#xE000; Previous
+                        </a>
                     </div>
                     <div id="disco_contents">
-                        <div id="disco_CD">
-                            <ul>
-                                <li>
-                                     <div>
-                                         <div class="disco_article">
-                                             <a href="#">
-                                                 <div class="disco_cover" data-langNum="9">
-                                                     <img src="src/images/album/soon.jpg"></img>
-                                                 </div>
-                                                 <div class="disco_info">
-                                                     <div data-langNum="8"><i>미정(Undefined)</i></div><div>CD · 2023</div>
-                                                 </div>
-                                             </a>
-                                         </div>
-                                     </div>
-                                </li> 
-                             </ul>
-                        </div>
                         <div id="disco_digital">
                             <ul>
                                <li>
                                     <div>
-                                        <div class="disco_article">
-                                            <a href="discography/single/anxiety.html">
-                                                <div class="disco_cover">
-                                                    <img src="src/images/album/anxiety_cover.jpg"></img>
+                                        <div class="disco_info_article">
+                                            <div class="disco_cover_big">
+                                                <img src="../../src/images/album/soon.jpg"></img>
+                                            </div>
+                                            <div class="disco_info_info">
+                                                <div class="disco_info_main">
+                                                    <p class="disco_info_title">미정(Undefined)</p><p class="disco_info_date">2023</p>
                                                 </div>
-                                                <div class="disco_info">
-                                                    <div data-langNum="7">불안장애 (Anxiety)</div><div>Digital · 2022.07.08</div>
+                                                <hr>
+                                                <div class="disco_info_track">
+                                                    <b><p>1</p></b><p>-</p><p>-</p>                                       
                                                 </div>
-                                            </a>
+                                                <div class="disco_info_track">
+                                                    <p>2</p><p>-</p><p>-</p>                                       
+                                                </div>
+                                                <div class="disco_info_track">
+                                                    <p>3</p><p>-</p><p>-</p>                                       
+                                                </div>
+                                                <div class="disco_info_credits">
+                                                    CD · © 2023 GYEONG ℗ 2023 GYEONG<br>
+                                                    Digital Single ·
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                </li> 
                             </ul>
-                        </div>
-                        <div id="disco_Album">
                         </div>
                     </div>
                 </div>
@@ -220,52 +195,28 @@
         0: 'Portfolio',
         1: 'Download',
         2: 'Discography',
-        3: 'All',
-        4: 'CD',
-        5: 'Digital·Single',
-        6: 'Album',
-        7: 'Anxiety',
-        8: '<i>Undefined</i>',
-        9: '<img src="src/images/album/soon_en.jpg"></img>'
+        3: '&#xE000; Previous',
         };
 
         $.lang.ko = {
         0: '포트폴리오',
         1: '다운로드',
         2: '디스코그래피',
-        3: '전체',
-        4: 'CD',
-        5: '디지털·싱글',
-        6: '앨범',
-        7: '불안장애 (Anxiety)',
-        8: '<i>미정(Undefined)</i>',
-        9: '<img src="src/images/album/soon.jpg"></img>'
+        3: '&#xE000; 뒤로가기',
         };
 
         $.lang.ja = {
         0: 'ポートフォリオ',
         1: 'ダウンロード',
         2: 'ディスコグラフィー',
-        3: 'すべて',
-        4: 'CD',
-        5: 'デジタル·シングル',
-        6: 'アルバム.',
-        7: 'Anxiety',
-        8: '<i>未定義</i>',
-        9: '<img src="src/images/album/soon_ja.jpg"></img>'
+        3: '&#xE000; 以前',
         }
 
         $.lang.uk = {
         0: 'Портфоліо',
         1: 'Завантажити',
         2: 'Дискографія',
-        3: 'всі',
-        4: 'CD',
-        5: 'Digital·Single',
-        6: 'Альбом',
-        7: 'Anxiety',
-        8: '<i>Невизначено</i>',
-        9: '<img src="src/images/album/soon_en.jpg"></img>'
+        3: '&#xE000; Попередній',
         }
 
         /**
