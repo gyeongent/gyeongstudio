@@ -38,11 +38,47 @@
                         </a>
                     </li>
                     <li>
+                        <a href="../../../discography.html" data-langNum="9" style="color: lightgrey;">
+                            Discography
+                        </a>
+                    </li>
+                    <li>
                         <a href="../../../download.html" style="color: lightgrey;" data-langNum="1">
                             Download
                         </a>
                     </li>
                 </ul>
+                <label for="toggle">
+                    <div id="nav-icon4">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="toggle"/>
+                <div id="mobile-menu">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="portfolio.html" data-langNum="0">
+                                Portfolio
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="discography.html" data-langNum="9">
+                                Discography
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="download.html" data-langNum="1">
+                                Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="HeaderArticle_2">
                 <ul>
@@ -143,6 +179,7 @@
         6: 'Font production is decided!',
         7: 'It has been decided that the font of Anbandeut, which is straight but not straight, will be made.<br>The first beta will be released on May 5th.',
         8: 'April 5, 2022',
+        9: 'Discography'
         };
 
         $.lang.ko = {
@@ -155,6 +192,7 @@
         6: '폰트 제작 결정!',
         7: '반듯하지만 반듯하지 않은 "안반듯체" 폰트 제작이 결정되었습니다!<br>첫번째 베타 버전은 5월 5일에 공개됩니다.',
         8: '2022년 4월 5일',
+        9: '디스코그래피'
         };
 
         $.lang.ja = {
@@ -167,6 +205,7 @@
         6: 'フォント製作決定！',
         7: '整わない「Anbandeut」フォントの 制作が決定しました。<br>最初のベータバージョンは5月5日に公開されます。',
         8: '2022年 4月 5日',
+        9: 'ディスコグラフィー'
         }
 
         $.lang.uk = {
@@ -179,6 +218,7 @@
         6: 'створення шрифтів рішення!',
         7: 'Ми вирішили, що шрифт «Anbandeut», який є прямим, але не прямим, буде виготовлено.<br>Перша бета-версія буде випущена 5 травня.',
         8: '14/03/2022',
+        9: 'Дискографія'
         }
 
         /**
@@ -205,4 +245,11 @@
         else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
     </script>
+     <script>
+        $(document).ready(function () {
+        $("#nav-icon4").click(function () {
+          $(this).toggleClass("open");
+          });
+        });
+      </script>
 </html>

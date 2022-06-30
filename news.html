@@ -38,11 +38,47 @@
                         </a>
                     </li>
                     <li>
+                        <a href="discography.html" data-langNum="7" style="color: lightgrey;">
+                            Discography
+                        </a>
+                    </li>
+                    <li>
                         <a href="download.html" style="color: lightgrey;" data-langNum="1">
                             Download
                         </a>
                     </li>
                 </ul>
+                <label for="toggle">
+                    <div id="nav-icon4">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="toggle"/>
+                <div id="mobile-menu">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="portfolio.html" data-langNum="0">
+                                Portfolio
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="discography.html" data-langNum="7">
+                                Discography
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="download.html" data-langNum="1">
+                                Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="HeaderArticle_2">
                 <ul>
@@ -142,6 +178,7 @@
         4: 'The web page has been opened. <p id="NewsDate">March 14, 2022</p>',
         5: 'Font production is decided! <p id="NewsDate">April 5, 2022</p>',
         6: '<p class="New_icon_inpage">NEW</p> First music single will be released.<p id="NewsDate">June 29, 2022</p>',
+        7: 'Discography'
         };
 
         $.lang.ko = {
@@ -152,6 +189,7 @@
         4: '웹페이지가 오픈되었습니다. <p id="NewsDate">2022년 3월 14일</p>',
         5: '폰트 제작 결정! <p id="NewsDate">2022년 4월 5일</p>',
         6: '<p class="New_icon_inpage">NEW</p> 첫 싱글 앨범이 발매됩니다.<p id="NewsDate">2022년 6월 29일</p>',
+        7: '디스코그래피'
         };
 
         $.lang.ja = {
@@ -162,6 +200,7 @@
         4: 'ウェブページがオープンしました。 <p id="NewsDate">2022年 3月 14日</p>',
         5: 'フォント製作決定！ <p id="NewsDate">2022年 4月 5日</p>',
         6: '<p class="New_icon_inpage">NEW</p> 初のシングルアルバムが発売されます <p id="NewsDate">2022年 6月 29日</p>',
+        7: 'ディスコグラフィー'
         }
 
         $.lang.uk = {
@@ -172,6 +211,7 @@
         4: 'Веб-сторінку відкрито. <p id="NewsDate">14/03/2022</p>',
         5: 'створення шрифтів рішення! <p id="NewsDate">05/04/2022</p>',
         6: '<p class="New_icon_inpage">NEW</p> Вийде перший музичний сингл<p id="NewsDate">29/06/2022</p>',
+        7: 'Дискографія'
         }
 
         /**
@@ -200,14 +240,21 @@
     </script>
     <script>
         var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-80px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
     </script>
+     <script>
+        $(document).ready(function () {
+        $("#nav-icon4").click(function () {
+          $(this).toggleClass("open");
+          });
+        });
+      </script>
 </html>

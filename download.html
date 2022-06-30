@@ -38,11 +38,47 @@
                         </a>
                     </li>
                     <li>
+                        <a href="discography.html" data-langNum="3" style="color: lightgrey;">
+                            Discography
+                        </a>
+                    </li>
+                    <li>
                         <a href="#ContentsSection" style="color: black;" data-langNum="1">
                             Download
                         </a>
                     </li>
                 </ul>
+                <label for="toggle">
+                    <div id="nav-icon4">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="toggle"/>
+                <div id="mobile-menu">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="portfolio.html" data-langNum="0">
+                                Portfolio
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="discography.html" data-langNum="3">
+                                Discography
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="download.html" data-langNum="1">
+                                Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="HeaderArticle_2">
                 <ul> 
@@ -152,7 +188,7 @@
         0: 'Portfolio',
         1: 'Download',
         2: 'This is GYEONG Studio',
-        3: 'The website is being prepared<br>please wait :)',
+        3: 'DiscoGraphy',
         4: ''
         };
 
@@ -160,7 +196,7 @@
         0: '포트폴리오',
         1: '다운로드',
         2: 'GYEONG Studio에<br>오신 것을 환영합니다.',
-        3: '웹사이트 준비중입니다.<br>잠시만 기다려주세요 :)',
+        3: '디스코그래피',
         4: ''
         };
 
@@ -168,7 +204,7 @@
         0: 'ポートフォリオ',
         1: 'ダウンロード',
         2: 'GYEONG Studioへようこそ。',
-        3: 'ウェブサイトを準備中です。<br>少々お待ちくださいませ :)',
+        3: 'ディスコグラフィー',
         4: '',
         }
 
@@ -176,7 +212,7 @@
         0: 'Портфоліо',
         1: 'Завантажити',
         2: 'Це GYEONG Studio',
-        3: 'Сайт готується<br>будь ласка, зачекайте :)',
+        3: 'Дискографія',
         4: ''
         }
 
@@ -204,4 +240,11 @@
         else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
     </script>
+     <script>
+        $(document).ready(function () {
+        $("#nav-icon4").click(function () {
+          $(this).toggleClass("open");
+          });
+        });
+      </script>
 </html>

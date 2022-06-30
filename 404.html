@@ -90,7 +90,7 @@
         <header class="header">
             <div id="HeaderArticle_1">
                 <a href="https://gyeong.net/">
-                    <img src="src/images/logo_ukraine.svg" width="90%">
+                    <img src="src/images/logo.svg" width="90%">
                 </a>
             </div>
             <div id="HeaderArticle_2">
@@ -173,4 +173,11 @@
         else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
     </script>
+     <script>
+        $(document).ready(function () {
+        $("#nav-icon4").click(function () {
+          $(this).toggleClass("open");
+          });
+        });
+      </script>
 </html>

@@ -39,11 +39,47 @@
                         </a>
                     </li>
                     <li>
+                        <a href="discography.html" data-langNum="2" style="color: black;">
+                            Discography
+                        </a>
+                    </li>
+                    <li>
                         <a href="download.html" style="color: lightgrey;" data-langNum="1">
                             Download
                         </a>
                     </li>
                 </ul>
+                <label for="toggle">
+                    <div id="nav-icon4">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="toggle"/>
+                <div id="mobile-menu">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="portfolio.html" data-langNum="0">
+                                Portfolio
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="discography.html" data-langNum="2">
+                                Discography
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="download.html" data-langNum="1">
+                                Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="HeaderArticle_2">
                 <ul>
@@ -232,4 +268,11 @@
         else if (getLang() != "en", "ko", "ja", "uk")
                 setLanguage("en");
     </script>
+     <script>
+        $(document).ready(function () {
+        $("#nav-icon4").click(function () {
+          $(this).toggleClass("open");
+          });
+        });
+      </script>
 </html>

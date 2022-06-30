@@ -48,11 +48,47 @@
                         </a>
                     </li>
                     <li>
+                        <a href="discography.html" style="color: lightgrey;" data-langNum="15">
+                            Discography
+                        </a>
+                    </li>
+                    <li>
                         <a href="download.html" style="color: lightgrey;" data-langNum="1">
                             Download
                         </a>
                     </li>
                 </ul>
+                <label for="toggle">
+                    <div id="nav-icon4">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="toggle"/>
+                <div id="mobile-menu">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="portfolio.html" data-langNum="0">
+                                Portfolio
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="discography.html" data-langNum="15">
+                                Discography
+                                </a>
+                            </li>
+                        <hr align="right">
+                            <li>
+                                <a href="download.html" data-langNum="1">
+                                Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="HeaderArticle_2">
                 <ul>
@@ -224,6 +260,7 @@
         12: 'The emotions I feelings.',
         13: 'Since I was young, I have been sympathized and comforted by listening to music whenever I was depressed or struggling. At this time, the experience of "sympathy" was one of the very important roles in building the current graphic portfolio.<br>Now its time to make someone feel comforted.',
         14: 'Go to discography page &#xE001;',
+        15: 'Discography',
         };
 
         $.lang.ko = {
@@ -242,6 +279,7 @@
         12: '느끼는 감정들',
         13: '어렸을 적부터 우울할때나 힘이 들때마다 음악을 들으며 공감하고 위로를 받아왔습니다. 이때 "공감"했던 경험이 지금의 그래픽 포트폴리오를 쌓아가는 데에 아주 중요했던 역할 중 하나였습니다.<br>이제 누군가에게 위로의 감정을 느끼게 해줄 차례입니다.',
         14: '디스코그래피 페이지로 이동하기 &#xE001;',
+        15: '디스코그래피',
         };
 
         $.lang.ja = {
@@ -259,7 +297,8 @@
         11: '音楽',
         12: '感じる感情',
         13: '幼い頃から憂鬱な時や辛い時に音楽を聞いて共感して慰められてきました。 この時"共感"した経験が今のグラフィックポートフォリオを築いていく上でとても重要な役割の一つでした。<br>今度は誰かに慰めの気持ちを感じさせてくれる順番です',
-        14: 'ディスコグラフィーページに移動する &#xE001;'
+        14: 'ディスコグラフィーページに移動する &#xE001;',
+        15: 'ディスコグラフィー',
         }
 
         $.lang.uk = {
@@ -278,6 +317,7 @@
         12: 'Емоції, які я відчуваю',
         13: 'Ще з дитинства, коли я був у депресії чи стресі, я слухав музику, щоб співпереживати і втішити мене. Досвід, який я мав на той час, був однією з найважливіших ролей у створенні мого графічного портфоліо сьогодні.<br>Тепер настав час дати комусь відчуття комфорту.',
         14: 'Незабаром',
+        15: 'Дискографія',
         }
 
         /**
@@ -311,4 +351,11 @@
             background.style.backgroundPosition = "70px";
         }
     </script>
+     <script>
+        $(document).ready(function () {
+        $("#nav-icon4").click(function () {
+          $(this).toggleClass("open");
+          });
+        });
+      </script>
 </html>
