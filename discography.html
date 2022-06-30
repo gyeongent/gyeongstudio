@@ -112,75 +112,64 @@
                     </p>
                 </div>
                 <div id="NewsRightContents">
-                    <div id="disco_nav">
-                        <ul>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(0)" data-langNum="3">
-                                    <p>전체</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(1)" data-langNum="4">
-                                    <p>CD</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(2)" data-langNum="5">
-                                    <p>Digital·Single</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="disco_btn" onclick="javascript:discoViewer(3)" data-langNum="6">
-                                    <p>Album</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="disco_contents">
-                        <div id="disco_CD">
+                        <div id="disco_nav">
                             <ul>
                                 <li>
-                                     <div>
-                                         <div class="disco_article">
-                                             <a href="#">
-                                                 <div class="disco_cover" data-langNum="9">
-                                                     <img src="src/images/album/soon.jpg"></img>
-                                                 </div>
-                                                 <div class="disco_info">
-                                                     <div data-langNum="8"><i>미정(Undefined)</i></div><div>CD · 2023</div>
-                                                 </div>
-                                             </a>
-                                         </div>
-                                     </div>
-                                </li> 
-                             </ul>
-                        </div>
-                        <div id="disco_digital">
-                            <ul>
-                               <li>
-                                    <div>
-                                        <div class="disco_article">
-                                            <a href="discography/single/anxiety.html">
-                                                <div class="disco_cover">
-                                                    <img src="src/images/album/anxiety_cover.jpg"></img>
-                                                </div>
-                                                <div class="disco_info">
-                                                    <div data-langNum="7">불안장애 (Anxiety)</div><div>Digital · 2022.07.08</div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                    <div id="disco_btn" onclick="javascript:discoViewer(0)" data-langNum="3">
+                                        <p>전체</p>
                                     </div>
-                               </li> 
+                                </li>
+                                <li>
+                                    <div id="disco_btn" onclick="javascript:discoViewer(1)" data-langNum="4">
+                                        <p>CD</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="disco_btn" onclick="javascript:discoViewer(2)" data-langNum="5">
+                                        <p>Digital·Single</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="disco_btn" onclick="javascript:discoViewer(3)" data-langNum="6">
+                                        <p>Album</p>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
-                        <div id="disco_Album">
+                        <div id="disco_contents">
+                            <!--콘텐츠 추가시 footer top 속성 조절하기-->
+                            <div id="disco_contents_child">
+                                <div class="disco_article" id="disco_CD">
+                                    <a href="#">
+                                        <div class="disco_cover" data-langNum="9">
+                                            <img src="src/images/album/soon.jpg"></img>
+                                        </div>
+                                        <div class="disco_info">
+                                            <div data-langNum="8"><i>미정(Undefined)</i></div><div>CD · 2023</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="disco_contents_child">
+                                <div class="disco_article" id="disco_digital">
+                                    <a href="discography/single/anxiety.html">
+                                        <div class="disco_cover">
+                                            <img src="src/images/album/anxiety_cover.jpg"></img>
+                                        </div>
+                                        <div class="disco_info">
+                                            <div data-langNum="7">불안장애 (Anxiety)</div><div>Digital · 2022.07.08</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="disco_Album">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <footer>
-            <p>(C) 2022. by GYEONG Studio.</p>
+            <p>© 2022. by GYEONG Studio.</p>
             <div class="Lang_sel" onclick="LangSelClick()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Translate_%28CoreUI_Icons_v1.0.0%29.svg" />
                 <div class="Lang_menu">
