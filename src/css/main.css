@@ -874,7 +874,7 @@ list-style: none;
     flex-wrap: wrap;
 }
 
-#disco_contents_child {
+.disco_article {
     padding: 15px;
 }
 
