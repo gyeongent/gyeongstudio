@@ -962,6 +962,24 @@ list-style: none;
     display: flex;
 }
 
+.popupmodal {
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-size: 13px;
+}
+
+.popupindex:hover ~ .popupmodal {
+    display: block;
+}
+
+.popupmodal:hover {
+    display: block;
+}
+    
 @media (max-width: 768px) {
 
     html, body {
