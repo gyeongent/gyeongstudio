@@ -992,11 +992,15 @@ list-style: none;
     }
 
     .header > #HeaderArticle_1 > a {
-        width: 35%;
+        width: 30%;
         margin-top: 17px;
         margin-left: 30px;
         padding-right: 15px;
         border: 0;
+    }
+
+    #HeaderArticle_1 {
+        justify-content: space-between;
     }
     
     #nav-icon4 {
@@ -1004,7 +1008,7 @@ list-style: none;
     }
 
     #HeaderArticle_1 > ul {
-        visibility: hidden;
+        display: none !important;
     }
 
     .ScrollDown_icon {
@@ -1177,6 +1181,10 @@ list-style: none;
         display: block;
     }
 
+    #disco_digital {
+        margin-top: 130px;
+    }
+
     #disco_nav > ul {
         list-style: none;
         display:contents;
@@ -1224,7 +1232,7 @@ list-style: none;
     }
     
     .disco_info_info {
-        width: max-content;
+        width: 100%;
         padding: 25px 0 0 0;
     }
     
