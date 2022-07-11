@@ -874,6 +874,10 @@ list-style: none;
     flex-wrap: wrap;
 }
 
+#disco_contents_child {
+    display: flex;
+}
+
 .disco_article {
     padding: 15px;
 }
