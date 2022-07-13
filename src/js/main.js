@@ -29,34 +29,40 @@ function newsViewer(strValue)
 
 function discoViewer(strValue)
 {
-	var newsLayer1 = document.getElementById('disco_CD');
-	var newsLayer2 = document.getElementById('disco_digital');
-	var newsLayer3 = document.getElementById('disco_album');
+	var discoCD = document.getElementById('disco_CD');
+	var discoDigital = document.getElementById('disco_digital');
+	var discoDigital_2 = document.getElementById('disco_digital_2');
+	var discoAlbum = document.getElementById('disco_album');
 
 	if (strValue == "0") {
-		newsLayer1.style.display = "block";
-		newsLayer2.style.display = "block";
-		newsLayer3.style.display = "block";
+		discoCD.style.display = "block";
+		discoDigital.style.display = "block";
+		discoDigital_2.style.display = "block";
+		discoAlbum.style.display = "block";
 	}
 	else if (strValue == "1") {
-		newsLayer1.style.display = "block";
-		newsLayer2.style.display = "none";
-		newsLayer3.style.display = "none";
+		discoCD.style.display = "block";
+		discoDigital.style.display = "none";
+		discoDigital_2.style.display = "none";
+		discoAlbum.style.display = "none";
 	}
 	else if (strValue == "2") {
-		newsLayer1.style.display = "none";
-		newsLayer2.style.display = "block";
-		newsLayer3.style.display = "none";
+		discoCD.style.display = "none";
+		discoDigital.style.display = "block";
+		discoDigital_2.style.display = "block";
+		discoAlbum.style.display = "none";
 	}
 	else if (strValue == "3") {
-		newsLayer1.style.display = "none";
-		newsLayer2.style.display = "none";
-		newsLayer3.style.display = "block";
+		discoCD.style.display = "none";
+		discoDigital.style.display = "none";
+		discoDigital_2.style.display = "none";
+		discoAlbum.style.display = "block";
 	}
 	else {
-		newsLayer1.style.display = "none";
-		newsLayer2.style.display = "none";
-		newsLayer3.style.display = "none";
+		discoCD.style.display = "none";
+		discoDigital.style.display = "none";
+		discoDigital_2.style.display = "none";
+		discoAlbum.style.display = "none";
 	}
 }
 

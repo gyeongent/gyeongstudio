@@ -876,10 +876,13 @@ list-style: none;
 
 #disco_contents_child {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .disco_article {
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .disco_article:hover .disco_cover > img {
